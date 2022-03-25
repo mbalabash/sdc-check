@@ -107,7 +107,8 @@ npx sdc-check -p ua-parser-js -v 1.0.2
 
 | Status  | Name                          | Description                                                                                                                                                                |
 | ------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Backlog | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
+| In progress | **Initial release** | Will be soon |
+| To do | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
 
 ## Install
 
