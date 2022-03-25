@@ -1,0 +1,11 @@
+{
+  "limitOfDecisionMakers": 7,
+  "daysBeforeUpgradeToNewVersion": 7,
+  "monthsOfInactivityAllowed": 9,
+  "errors": [
+    "package-is-too-new",
+    "lockfile-is-not-safe",
+    "has-os-scripts",
+    "dangerous-shell-commands"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "sdc-check": {
+    "options": {
+      "limitOfDecisionMakers": 1,
+      "monthsOfInactivityAllowed": 1,
+      "daysBeforeUpgradeToNewVersion": 1
+    },
+    "errors": [
+      "lockfile-is-not-safe",
+      "install-scripts"
+    ]
+  }
+}

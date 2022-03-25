@@ -1,0 +1,277 @@
+{
+  "type": "error",
+  "errors": [
+    {
+      "metric": "lockfile-is-not-safe",
+      "message": "detected invalid origin for package: @test/data",
+      "package": "@test/data"
+    }
+  ],
+  "warnings": [
+    {
+      "metric": "too-many-decision-makers",
+      "package": "commander@9.1.0",
+      "message": "count of decision makers is 9"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "ms@2.1.2",
+      "message": "count of decision makers is 128"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "ms@2.1.2",
+      "message": "package last update date is 2020-12-08"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "ms@2.1.2",
+      "message": "previous package release date is 2017-11-30"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "debug@4.3.4",
+      "message": "count of decision makers is 8"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "debug@4.3.3",
+      "message": "count of decision makers is 8"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "debug@4.3.3",
+      "message": "previous package release date is 2020-12-09"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "@sitespeed.io/tracium@0.3.3",
+      "message": "package last update date is 2019-06-30"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "tr46@0.0.3",
+      "message": "count of decision makers is 9"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "webidl-conversions@3.0.1",
+      "message": "count of decision makers is 9"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "whatwg-url@5.0.0",
+      "message": "count of decision makers is 8"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "node-fetch@2.6.7",
+      "message": "count of decision makers is 10"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "end-of-stream@1.4.4",
+      "message": "package last update date is 2019-09-25"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "once@1.4.0",
+      "message": "package last update date is 2016-09-06"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "once@1.4.0",
+      "message": "previous package release date is 2015-11-20"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "pump@3.0.0",
+      "message": "package last update date is 2018-01-31"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "get-stream@5.2.0",
+      "message": "previous package release date is 2019-04-05"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "pend@1.2.0",
+      "message": "package last update date is 2014-11-23"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "fd-slicer@1.1.0",
+      "message": "package last update date is 2018-06-03"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "fd-slicer@1.1.0",
+      "message": "previous package release date is 2015-01-12"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "buffer-crc32@0.2.13",
+      "message": "package last update date is 2016-11-22"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "yauzl@2.10.0",
+      "message": "package last update date is 2018-07-03"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "extract-zip@2.0.1",
+      "message": "package last update date is 2020-06-10"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "agent-base@6.0.2",
+      "message": "package last update date is 2020-10-23"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "https-proxy-agent@5.0.0",
+      "message": "package last update date is 2020-02-07"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "path-exists@4.0.0",
+      "message": "previous package release date is 2016-05-01"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "progress@2.0.3",
+      "message": "count of decision makers is 9"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "progress@2.0.3",
+      "message": "package last update date is 2018-12-05"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "proxy-from-env@1.1.0",
+      "message": "package last update date is 2020-03-04"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "proxy-from-env@1.1.0",
+      "message": "previous package release date is 2017-02-24"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "fs.realpath@1.0.0",
+      "message": "package last update date is 2016-06-15"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "wrappy@1.0.2",
+      "message": "package last update date is 2016-05-17"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "wrappy@1.0.2",
+      "message": "previous package release date is 2014-09-18"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "inflight@1.0.6",
+      "message": "count of decision makers is 9"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "inflight@1.0.6",
+      "message": "package last update date is 2016-10-13"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "inherits@2.0.4",
+      "message": "package last update date is 2019-06-19"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "inherits@2.0.4",
+      "message": "previous package release date is 2016-09-08"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "brace-expansion@1.1.11",
+      "message": "package last update date is 2021-02-22"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "path-is-absolute@1.0.1",
+      "message": "package last update date is 2018-11-08"
+    },
+    {
+      "metric": "released-after-long-period-of-inactivity",
+      "package": "path-is-absolute@1.0.1",
+      "message": "previous package release date is 2015-02-17"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "rimraf@3.0.2",
+      "message": "package last update date is 2020-02-09"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "chownr@1.1.4",
+      "message": "package last update date is 2020-02-12"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "mkdirp-classic@0.5.3",
+      "message": "package last update date is 2020-05-04"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "buffer@5.7.1",
+      "message": "package last update date is 2020-11-23"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "readable-stream@3.6.0",
+      "message": "count of decision makers is 11"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "readable-stream@3.6.0",
+      "message": "package last update date is 2020-02-13"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "fs-constants@1.0.0",
+      "message": "package last update date is 2018-04-26"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "tar-stream@2.2.0",
+      "message": "package last update date is 2020-12-29"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "tar-fs@2.1.1",
+      "message": "package last update date is 2020-11-06"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "through@2.3.8",
+      "message": "package last update date is 2015-07-03"
+    },
+    {
+      "metric": "unmaintained-package",
+      "package": "unbzip2-stream@1.4.3",
+      "message": "package last update date is 2020-05-27"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "ws@8.5.0",
+      "message": "count of decision makers is 8"
+    },
+    {
+      "metric": "too-many-decision-makers",
+      "package": "puppeteer-core@13.5.1",
+      "message": "count of decision makers is 10"
+    }
+  ]
+}

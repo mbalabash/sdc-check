@@ -1,0 +1,117 @@
+{
+  "_id": "estimo",
+  "_rev": "37-035b73cd7f4e8d4cdbd37bc02e770b55",
+  "name": "estimo",
+  "dist-tags": {
+    "latest": "2.3.4"
+  },
+  "versions": {
+    "0.1.3": {
+      "name": "estimo",
+      "version": "0.1.3",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "preferGlobal": true,
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "nanoid": "^2.0.1"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "ava": {
+        "files": ["test/**/*.js", "!test/__mock__/**"]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": ["yarn eslint", "git add"]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": ["bigrig", "chrome", "devtools", "size-limit", "performance", "js"],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "84181ad9bc9a25a22600ed80c02dc353776f8eaa",
+      "_id": "estimo@0.1.3",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-Vk1XnoVmQsIkLOW0RSRq60ixaUJdzt+LwzZBn6l1gHEFCscygGTeO7j5WhyRmR7mcMksi6TJsUrNg3BJNVhIEw==",
+        "shasum": "56b4c94930960d2e87edeea6f515478b4c721753",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.3.tgz",
+        "fileCount": 17,
+        "unpackedSize": 18607,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctM6mCRA9TVsSAnZWagAA0+AP/0aFfumGqCe0wreOa/ZU\nTtK/Bo77ibWca/4MZ31Q0iGwzwi28SXbKj+DxexslH331Wbv6511xItT0WK9\n/rvKFnEocJlhDIZNsFU/iMfxksT5GnD4f0SVCjR+LxDnvAMvoAj5nlNWkynT\nbM2mXEPPeA/FfkD3CD2OOUODqgeep/FiCfcx5Hx0z4WSsRilpd7vb/dUkiMd\nialpxFrTYweN0ZjIhmTvqIIQZj2Doscl+f7kwrmb3B1lEX6FEFvfVFTQBDGY\n5uiTjf34j/9YRMytrTXZDdn1xUuqjdOQxZI8aCi3a7R3km65osJCyApY9+BF\n1R+san5Qj3qhVR35NNK5XjW7jWvHdU6rbWdarF+oomQBysgSktCCdf9D5Rlv\n3fLyfpSHINSZBHMLJqxRx5N4bb5yVQ8ZSKYSmMyua7vGTPPh4HrPXlegD6hW\nixDoLn3wADy1/J7qUwgjQxWeniux9i4hge1oZZbbKumDyNUquWsl/i4TXUjj\nkVezeuY34zp+hGSc7Ls80jaRa/9iOxpixJ43aFhg1+Sm1wk9wl/ItdDjJnpn\nSCpnICwGdGK6qpZT8ClNJEG5d3uix5anF0BL1GXtFr3/EdwLOZMgyRkRsALx\nUEQqm4haF9lW2/mxmvUJiQiwIyJT5BXOkU9Id8kQ4NwjDEjLQhzv3HG1no5U\ny4XE\r\n=Rt7f\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.3_1555353254187_0.31768906490473925"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "time": {
+    "created": "2019-04-15T18:34:14.187Z",
+    "0.1.3": "2019-04-15T18:34:14.320Z",
+    "modified": "2022-02-27T17:43:13.069Z"
+  },
+  "maintainers": [
+    {
+      "name": "mbalabash",
+      "email": "maksim.balabash@gmail.com"
+    }
+  ],
+  "description": "Evaluates how long the browser will execute your javascript code",
+  "homepage": "https://github.com/mbalabash/estimo#readme",
+  "keywords": ["chrome", "tracium", "puppeteer", "devtools", "size-limit", "performance"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbalabash/estimo.git"
+  },
+  "author": {
+    "name": "mbalabash",
+    "email": "maksim.balabash@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mbalabash/estimo/issues"
+  },
+  "license": "MIT",
+  "readme": "## Estimo\n\nEstimo is a tool for measuring parse / compile / execution time of javascript.\n\nThis tool can emulate CPU throttling, Network conditions, use Chrome Device emulation and more for measuring javascript performance.\n\n_Inspired by [Size Limit](https://github.com/ai/size-limit). Thanks [@ai](https://github.com/ai/) and [@aslushnikov](https://github.com/aslushnikov) for support._\n\n## Why?\n\n**JavaScript** is the **most expensive part** of our frontend.\n\n![3.5 seconds to process 170 KB of JS and 0.1 second for 170 KB of JPEG. @Addy Osmani](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/javascript-startup-optimization/images/1_PRVzNizF9jQ_QADF5lQHpA.png)\n\n**3.5 seconds** to process 170 KB of JS and **0.1 second** for 170 KB of JPEG.\n\n## Usage\n\n**JS API**\n\n```js\nconst path = require('path')\nconst estimo = require('estimo')\n\n;(async () => {\n  const report = await estimo(path.join(__dirname, 'examples', 'example.js'))\n  console.log(report)\n})()\n```\n\n**CLI**\n\n```sh\nestimo -r ./examples/example.js\n```\n\n**Output**\n\n```js\n[\n  {\n    name: 'example.js',\n    parseHTML: 1.01,\n    styleLayout: 34.08,\n    paintCompositeRender: 1.4,\n    scriptParseCompile: 1.04,\n    scriptEvaluation: 8.11,\n    javaScript: 9.15,\n    garbageCollection: 0,\n    other: 8.2,\n    total: 53.84,\n  },\n]\n```\n\n## Fields Description\n\n- **name** - Resource name (file name or web url).\n\n- **parseHTML** - Time which was spent for `ParseHTML`, `ParseAuthorStyleSheet` events.\n\n- **styleLayout** - Time which was spent for `ScheduleStyleRecalculation`, `UpdateLayoutTree`, `InvalidateLayout`, `Layout` events.\n\n- **paintCompositeRender** - Time which was spent for `Animation`, `HitTest`, `PaintSetup`, `Paint`, `PaintImage`, `RasterTask`, `ScrollLayer`, `UpdateLayer`, `UpdateLayerTree`, `CompositeLayers` events.\n\n- **scriptParseCompile** - Time which was spent for `v8.compile`, `v8.compileModule`, `v8.parseOnBackground` events.\n\n- **scriptEvaluation** - Time which was spent for `EventDispatch`, `EvaluateScript`, `v8.evaluateModule`, `FunctionCall`, `TimerFire`, `FireIdleCallback`, `FireAnimationFrame`, `RunMicrotasks`, `V8.Execute` events.\n\n- **javaScript** - Time which was spent for both event groups (**scriptParseCompile** and **scriptEvaluation**).\n\n- **garbageCollection** - Time which was spent for `MinorGC`, `MajorGC`, `BlinkGC.AtomicPhase`, `ThreadState::performIdleLazySweep`, `ThreadState::completeSweep`, `BlinkGCMarking` events.\n\n- **other** - Time which was spent for `MessageLoop::RunTask`, `TaskQueueManager::ProcessTaskFromWorkQueue`, `ThreadControllerImpl::DoWork` events.\n\n- **total** - Total time.\n\n## Time\n\n**All metrics are in milliseconds**.\n\nWe measure system-cpu time. The number of seconds that the process has spent on the CPU.\n\nWe not including time spent waiting for its turn on the CPU.\n\n## Multiple Runs\n\nAll results measured in time. It means that results could be unstable depends on available on your device resources.\n\nYou can use `runs` option to run estimo N times and get median value as a result.\n\n**JS API**\n\n```js\nconst report = await estimo(['/path/to/examples/example.js'], { runs: 10 })\n```\n\n**CLI**\n\n```sh\nestimo -r /path/to/examples/example.js -runs 10\n```\n\n## Diff Mode\n\nYou can compare metrics of an origin file with others its versions to understand consequences on performance.\n\nWe take the first file as a baseline. All rest files will be compared with the baseline.\n\n**JS API**\n\n```js\nconst report = await estimo(['lib-1.0.5.js', 'lib-1.1.0.js'], { diff: true })\n```\n\n**CLI**\n\n```sh\nestimo -r lib-1.0.5.js lib-1.1.0.js -diff\n```\n\n**Output**\n\n```js\n[\n  {\n    name: 'lib-1.0.5.js',\n    parseHTML: 1.48,\n    styleLayout: 44.61,\n    paintCompositeRender: 2.19,\n    scriptParseCompile: 1.21,\n    scriptEvaluation: 9.63,\n    javaScript: 10.84,\n    garbageCollection: 0,\n    other: 9.95,\n    total: 69.06,\n  },\n  {\n    name: 'lib-1.1.0.js',\n    parseHTML: 2.97,\n    styleLayout: 61.02,\n    paintCompositeRender: 2.11,\n    scriptParseCompile: 2.11,\n    scriptEvaluation: 19.28,\n    javaScript: 21.39,\n    garbageCollection: 0,\n    other: 15.49,\n    total: 102.98,\n    diff: {\n      parseHTML: '2.97 (+50.17% 🔺)',\n      styleLayout: '61.02 (+26.9% 🔺)',\n      paintCompositeRender: '2.11 (-3.8% 🔽)',\n      scriptParseCompile: '2.11 (+42.66% 🔺)',\n      scriptEvaluation: '19.28 (+50.06% 🔺)',\n      javaScript: '21.39 (+49.33% 🔺)',\n      garbageCollection: '0 (N/A)',\n      other: '15.49 (+35.77% 🔺)',\n      total: '102.98 (+32.94% 🔺)',\n    },\n  },\n]\n```\n\n## Additional Use Cases\n\n### CPU Throttling Rate\n\nThe CPU Throttling Rate Emulation allows you to simulate CPU performance.\n\n- **cpuThrottlingRate** (default: `1`) - Sets the CPU throttling rate. The number represents the slowdown factor (e.g., 2 is a \"2x\" slowdown).\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { cpuThrottlingRate: 4 })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -cpu 4\n```\n\n### Network Emulation\n\nThe Network Emulation allows you to simulate a specified network conditions.\n\n- **emulateNetworkConditions** (default: `undefined`) - One of [puppeteer network conditions descriptor](https://pptr.dev/#?product=Puppeteer&version=v11.0.0&show=api-puppeteernetworkconditions).\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { emulateNetworkConditions: 'Slow 3G' })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -net Slow\\ 3G\n```\n\n### Chrome Device Emulation\n\nThe Chrome Device Emulation allow you to simulate a specified device conditions.\n\n- **device** (default: `undefined`) - One of [puppeteer devices descriptor](https://pptr.dev/#?product=Puppeteer&version=v11.0.0&show=api-puppeteerdevices).\n\n**JS API**\n\n```js\nconst report = await estimo('/path/to/example.js', { device: 'Galaxy S5' })\n```\n\n**CLI**\n\n```sh\nestimo -r ./examples/examples.js -device Galaxy\\ S5\n```\n\nWhen using CLI, for device names with spaces you should use symbols escaping.\n\n### Changing default timeout\n\nYou can specify how long estimo should wait for page to load.\n\n- **timeout** (default: `20000`) - Sets timeout in ms.\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { timeout: 90000 })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -timeout 90000\n```\n\n### Multiple Resources\n\n**JS API**\n\n```js\nconst report = await estimo(['/path/to/libs/example.js', '/path/to/another/example/lib.js'])\n```\n\n**CLI**\n\n```sh\nestimo -r /path/to/example.js https://unpkg.com/react@16/umd/react.development.js\n```\n\n### Pages\n\nYou can use all features not only with js files, but with web pages too.\n\nWe will wait for navigation to be finished when the `load` event is fired.\n\n**JS API**\n\n```js\nconst report = await estimo('https://www.google.com/')\n```\n\n**CLI**\n\n```sh\nestimo -r https://www.google.com/\n```\n\n## Install\n\n```js\nnpm i estimo\n```\n\nor\n\n```js\nyarn add estimo\n```\n\n## How?\n\nIt uses [puppeteer](https://github.com/GoogleChrome/puppeteer) to generate Chrome Timelines. Which can be transformed in human-readable shape by [Tracium](https://github.com/aslushnikov/tracium).\n\nWe will use your local **Chrome** if it suitable for using with Estimo.\n\n**Keep in mind** there result depends on your device and available resources.\n\n## Who Uses Estimo\n\n- [Size Limit](https://github.com/ai/size-limit)\n\n## Contributing\n\nPull requests, feature ideas and bug reports are very welcome. We highly appreciate any feedback.\n",
+  "readmeFilename": "README.md",
+  "_cached": false,
+  "_contentLength": 0
+}

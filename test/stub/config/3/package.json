@@ -1,0 +1,13 @@
+{
+  "sdc-check": {
+    "qwe2wq": {
+      "limitOfDecisionMakers": 1,
+      "monthsOfInactivityAllowed": 1,
+      "daysBeforeUpgradeToNewVersion": 1
+    },
+    "67uyytu67tyg": [
+      "lockfile-is-not-safe",
+      "install-scripts"
+    ]
+  }
+}

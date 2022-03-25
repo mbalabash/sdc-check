@@ -1,0 +1,2228 @@
+[
+  {
+    "package": "commander",
+    "version": "9.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 9
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-18"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-01-29"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-03-18"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "nanoid",
+    "version": "3.3.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-16"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-02-14"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-02-16"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "find-chrome-bin",
+    "version": "0.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-01-25"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": ""
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2021-12-09"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "ms",
+    "version": "2.1.2",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 128
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-12-08"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2017-11-30"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-06-06"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "debug",
+    "version": "4.3.4",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 8
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-17"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2021-11-27"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-03-17"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "debug",
+    "version": "4.3.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 8
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-17"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2020-12-09"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2021-11-27"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "@sitespeed.io/tracium",
+    "version": "0.3.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2019-06-30"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-06-12"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-06-30"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "tr46",
+    "version": "0.0.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 9
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-10-03"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2015-06-06"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-01-20"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "webidl-conversions",
+    "version": "3.0.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 9
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-09-12"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2015-11-09"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-01-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "whatwg-url",
+    "version": "5.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 8
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-10-19"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2017-05-10"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2017-05-26"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "node-fetch",
+    "version": "2.6.7",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 10
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-11"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2021-11-08"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-01-16"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "cross-fetch",
+    "version": "3.1.5",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-01-20"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2021-10-19"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-01-20"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "devtools-protocol",
+    "version": "0.0.969999",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-17"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-02-11"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-02-11"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "end-of-stream",
+    "version": "1.4.4",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2019-09-25"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-09-24"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-09-25"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "once",
+    "version": "1.4.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2016-09-06"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2015-11-20"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-09-06"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "pump",
+    "version": "3.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-01-31"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2018-01-22"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-01-31"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "get-stream",
+    "version": "5.2.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 3
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-04-15"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2019-04-05"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-08-09"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "pend",
+    "version": "1.2.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2014-11-23"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2014-08-20"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2014-11-23"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "fd-slicer",
+    "version": "1.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-06-03"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2015-01-12"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-06-03"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "buffer-crc32",
+    "version": "0.2.13",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2016-11-22"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2016-11-21"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-11-22"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "yauzl",
+    "version": "2.10.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-07-03"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2018-06-03"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-07-03"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "extract-zip",
+    "version": "2.0.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-06-10"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-03-28"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-06-10"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "agent-base",
+    "version": "6.0.2",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-10-23"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-07-02"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-10-23"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "https-proxy-agent",
+    "version": "5.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-02-07"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-12-10"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-02-07"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "p-locate",
+    "version": "4.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-08-25"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-03-12"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-04-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "locate-path",
+    "version": "5.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-08"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-04-15"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-05-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "path-exists",
+    "version": "4.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-08-12"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2016-05-01"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-04-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "find-up",
+    "version": "4.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-08"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-05-12"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-06-17"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "pkg-dir",
+    "version": "4.2.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-10-06"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-04-05"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-05-21"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "progress",
+    "version": "2.0.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 9
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-12-05"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2018-12-03"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-12-05"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "proxy-from-env",
+    "version": "1.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-03-04"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2017-02-24"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-03-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "fs.realpath",
+    "version": "1.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2016-06-15"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2016-06-15"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-06-15"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "wrappy",
+    "version": "1.0.2",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 3
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2016-05-17"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2014-09-18"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-05-17"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "inflight",
+    "version": "1.0.6",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 9
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2016-10-13"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2016-05-18"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-10-13"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "inherits",
+    "version": "2.0.4",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2019-06-19"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2016-09-08"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2019-06-19"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "brace-expansion",
+    "version": "1.1.11",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2021-02-22"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2018-02-09"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-02-10"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "minimatch",
+    "version": "3.1.2",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-24"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-02-15"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-02-15"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "path-is-absolute",
+    "version": "1.0.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-11-08"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": true,
+        "value": "2015-02-17"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2016-09-30"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "glob",
+    "version": "7.2.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-09-22"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2021-05-06"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2021-09-22"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "rimraf",
+    "version": "3.0.2",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-02-09"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-01-28"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-02-09"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "chownr",
+    "version": "1.1.4",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-02-12"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2019-09-25"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-02-12"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "mkdirp-classic",
+    "version": "0.5.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-05-04"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-03-24"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-05-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "buffer",
+    "version": "5.7.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-11-23"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-11-04"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-11-04"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "readable-stream",
+    "version": "3.6.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 11
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-02-13"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-01-17"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-02-13"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "bl",
+    "version": "4.1.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2021-04-02"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2021-02-04"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2021-02-09"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "fs-constants",
+    "version": "1.0.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2018-04-26"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": ""
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2018-04-26"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "tar-stream",
+    "version": "2.2.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-12-29"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-09-10"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-12-29"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "tar-fs",
+    "version": "2.1.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 4
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-11-06"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-05-11"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-11-06"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "through",
+    "version": "2.3.8",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2015-07-03"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2015-04-06"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2015-07-03"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "unbzip2-stream",
+    "version": "1.4.3",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": true,
+        "value": "2020-05-27"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2020-04-21"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2020-05-27"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "ws",
+    "version": "8.5.0",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 8
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-07"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-02-07"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-02-07"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "puppeteer-core",
+    "version": "13.5.1",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": true,
+        "value": 10
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-03-09"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-03-07"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-03-09"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  },
+  {
+    "package": "estimo",
+    "version": "2.3.4",
+    "metrics": {
+      "hasTooManyDecisionMakers": {
+        "result": false,
+        "value": 2
+      },
+      "isPackageUnmaintained": {
+        "result": false,
+        "value": "2022-02-27"
+      },
+      "hasInstallScripts": {
+        "result": false,
+        "value": "{}"
+      },
+      "hasObfuscatedCode": {
+        "result": false,
+        "value": ""
+      },
+      "noSourceCodeRepository": {
+        "result": false,
+        "value": false
+      },
+      "scriptsHaveDangerousShellCommands": {
+        "result": false,
+        "value": ""
+      },
+      "packageReleasedAfterLongPeriodOfInactivity": {
+        "result": false,
+        "value": "2022-01-31"
+      },
+      "packageVersionIsTooNew": {
+        "result": false,
+        "value": "2022-02-27"
+      },
+      "hasOsScripts": {
+        "result": false,
+        "value": []
+      }
+    }
+  }
+]

@@ -1,0 +1,4212 @@
+{
+  "_id": "estimo",
+  "_rev": "37-035b73cd7f4e8d4cdbd37bc02e770b55",
+  "name": "estimo",
+  "dist-tags": {
+    "latest": "2.3.4"
+  },
+  "versions": {
+    "0.1.3": {
+      "name": "estimo",
+      "version": "0.1.3",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "preferGlobal": true,
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "nanoid": "^2.0.1"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "84181ad9bc9a25a22600ed80c02dc353776f8eaa",
+      "_id": "estimo@0.1.3",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-Vk1XnoVmQsIkLOW0RSRq60ixaUJdzt+LwzZBn6l1gHEFCscygGTeO7j5WhyRmR7mcMksi6TJsUrNg3BJNVhIEw==",
+        "shasum": "56b4c94930960d2e87edeea6f515478b4c721753",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.3.tgz",
+        "fileCount": 17,
+        "unpackedSize": 18607,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctM6mCRA9TVsSAnZWagAA0+AP/0aFfumGqCe0wreOa/ZU\nTtK/Bo77ibWca/4MZ31Q0iGwzwi28SXbKj+DxexslH331Wbv6511xItT0WK9\n/rvKFnEocJlhDIZNsFU/iMfxksT5GnD4f0SVCjR+LxDnvAMvoAj5nlNWkynT\nbM2mXEPPeA/FfkD3CD2OOUODqgeep/FiCfcx5Hx0z4WSsRilpd7vb/dUkiMd\nialpxFrTYweN0ZjIhmTvqIIQZj2Doscl+f7kwrmb3B1lEX6FEFvfVFTQBDGY\n5uiTjf34j/9YRMytrTXZDdn1xUuqjdOQxZI8aCi3a7R3km65osJCyApY9+BF\n1R+san5Qj3qhVR35NNK5XjW7jWvHdU6rbWdarF+oomQBysgSktCCdf9D5Rlv\n3fLyfpSHINSZBHMLJqxRx5N4bb5yVQ8ZSKYSmMyua7vGTPPh4HrPXlegD6hW\nixDoLn3wADy1/J7qUwgjQxWeniux9i4hge1oZZbbKumDyNUquWsl/i4TXUjj\nkVezeuY34zp+hGSc7Ls80jaRa/9iOxpixJ43aFhg1+Sm1wk9wl/ItdDjJnpn\nSCpnICwGdGK6qpZT8ClNJEG5d3uix5anF0BL1GXtFr3/EdwLOZMgyRkRsALx\nUEQqm4haF9lW2/mxmvUJiQiwIyJT5BXOkU9Id8kQ4NwjDEjLQhzv3HG1no5U\ny4XE\r\n=Rt7f\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.3_1555353254187_0.31768906490473925"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.4": {
+      "name": "estimo",
+      "version": "0.1.4",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "nanoid": "^2.0.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "78f1fe88164d8038a8be19fce3e92ef95036439b",
+      "_id": "estimo@0.1.4",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-5p0M0uMEx3tBXgz0sTAuUQKS86F5gQ8Sz/D8rSwTSQ5fAqmNkZJZ79XJ5YjKB0BDNzhPmChA85FGVhvGRYkJ0Q==",
+        "shasum": "3a1be3cce2fa19eb5e60d2b013997896bbb5814d",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.4.tgz",
+        "fileCount": 18,
+        "unpackedSize": 19549,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctP2LCRA9TVsSAnZWagAApLoP/imsVs+EglcgrFpaKJGW\n/GX6ZKRYddu/ySqHY9c0Cz3Q8t5bjtM4XVAsJJ5Rujo7kPHGm+Cfiic27Vze\nzHfA4+LD+forT/DFuK/cCQDslQYmkGfAnW9B1B9BqMpKJSv6CSuHsjD32i6w\nku8jIG9AJY8pZHx/NyS58nGXFmcjLHuC8+9bAQg5bhN+/e5yK3Lp1MTGT9OS\nDmDo3weTNJozSDecM9tuCjfDkiSt0Y/G8d12LWuaPnnWmsrcQYPNGxwqNRp7\njSCBAxF0KMkNHyUyo0YTHCPX0gqoWNaLMOhWSZ34aJCWoWODvsdvpXFpSkjx\naFrMMhhfFYHPEtr22Yg+op0QpdhH120r5G8EW0Fr7hR5kIyJkBXfgllxI5l2\n0bXIcv1KN+6OFYChv1ZRmZ2f44YLBADq9m4GLzBjxi9Wig0h21FQlNphDU0Q\nZraapolOUIIZCS9DURa2qu91KHvYpJ3jwkH1oS2o/yb3qoA4uKmv0yK765io\nOc+3oG4NI5Oftc8tB/vNEeQm1NKaawK+RgUNn3GPfTQaBNsGNa9Fd09Kb6K6\nGumOeVF7W7lueG14V891xoMtbbaEcriZwgTXprqNUNymNjX3kGZg/n60JUEa\nd0a786sis3CQJsk0IdXTPQVb7jqtL7bed/oIdMc6XmYJNiWq+JVCC1paNNyn\nu7Co\r\n=BPcc\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.4_1555365258653_0.6262063968508169"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.5": {
+      "name": "estimo",
+      "version": "0.1.5",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "nanoid": "^2.0.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "2637faa70eff5772ec0a03bfe8ee316d54973a6e",
+      "_id": "estimo@0.1.5",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-rcZLcYOyYXXgq6lJWaICwB/nLYIH2oUMhqASdtmdpGh6U2D9CyRm46aoCJoj7QIs+NxeZNfYZ2xQWnt47DkM5g==",
+        "shasum": "35aa25b36fcd2b654f41993ebe348dc01440ae59",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.5.tgz",
+        "fileCount": 18,
+        "unpackedSize": 23515,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctzr4CRA9TVsSAnZWagAAqOEQAJQlQ8L2Ey6V7sTZ7v5v\na/iIxiZ7sCu9z9v0ncjMVwF3MkCrwa/JGu9fkaE7/9elulXqELW1fGYu0tkT\n2Wqv/mv2lA7xFYpDCGOxoJ/qpYW1VgImD4jW8C9ZfnGtycRTJ4GqnnCP9t+R\nyKH08JJnJsRbrhEauL1NaAMboJh5fMcKz2H1D+IdeBxAWnMPnXvuVI1Nu0bS\nYAQm1bYrK9SfjnO1+qHNAP3Ce4rpdGE//Ps9c8t47e/ZU1z/do6ZnJIptTpj\n1la8v0l5mrBRmwsj4/WOYOW4TfUSMk+zH9gzlB6NBiDgV5smI1klaBnXxSN0\n9ThLls+/Hr6CQgFRL6xAA2HzCW0zGsNn548jQeAKLKaUGq24EkNkS1kkGpNZ\nMpUT0I/7S/zDgZfg920wGFLJFcapP8O1KTSySOSMBXeSo6pIHbTKIgQi3Qg+\nAkC/RHxFc/KF6k1/kZEnCHRjUlW+0EL157UmIMlZUhSXf/Ozs4nBGx3I45WE\nP7ty7ok7ivmfaYpHOWphgHpc0bbGQdX6TUpsu9f1ZU1Qdx/OdnQ+B3LrrumV\nU3X5WkJSI+X0hnCWyOwrHwfdT9IX7TanDu/OEqDVqaGMt/oCwpAPT+5fLUC3\nlmqMSqqsyDLd3bH0Er8cbvdgL4tBfsw7pCiiiTNhrymOuMrPubrLiSBlz8wn\nVpwu\r\n=IaCM\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.5_1555512055510_0.7288627651877753"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.6": {
+      "name": "estimo",
+      "version": "0.1.6",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "nanoid": "^2.0.1",
+        "node-npx": "^1.3.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "ac3f29d5d2e124e9bda7c8b24c1885e372d08de6",
+      "_id": "estimo@0.1.6",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-4cHBaOP8srCz5xG6HG/B/rr41UsJgheIrSQB9Mq8bolH0uysWE6n3pN1gMyHtqhMUKhMtYQkaPHUPWPlM26lpw==",
+        "shasum": "31258080a7f2afa91027f73aebed3fdfa54557ba",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.6.tgz",
+        "fileCount": 19,
+        "unpackedSize": 23491,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctzsxCRA9TVsSAnZWagAAKQ8P/0mfXdgVc8SFrye8bgfe\n8jmL1M0k91uVrJUNjA16Zk0A7G5a+nTXFtpRjKtwOvO3cngPFeJV8PABHR3w\n8qCCwvK0Ei61iFHi7bxkBL0Ps0EoJSNhWRDb6I1LeWvkv2Niob977drjfeum\nTC16s+gzOvD/C/PwYpGlizkKfePGSXZh7BwvcuNjVHw0XlHTpyKrwD+Y+xtT\nEWJvVHg7QqWGzA0qvsPbHvi8NiH9eBF3ehQV9qazF1JSpmyh9ihXpn6WUNfO\neeGzhOpkv6yju5RCKewPgjebFdsQmzqTWRcWhwYrNLzChdwD5lfTl8vC+L+g\nDzkiaV1SSb5HsnJYkCTAKHvr0ub/y4GZo34ot9TT5N2C5UKXAl19TnYRIua3\nfhR+yToKEnSix0roN1Qiu0+hdbLWQi916RfyvyulKhKBPrWLr6k33yKyA2Zd\nwiX9lSz/yP7SLSw8R8vr3XzPRT4sMoSdgFhMZLy8k2b3K7QVd9dT3NeVM8Ze\nmLJbX8hjUQ5tFisKVExD6HcUGo4ow7sKiBzQpPSH+EjsFvHFR9rxeGFCTDTm\nqtFlk82nqP6P7/gk34d4Qw9aUG8m8nXfdGhwogTW0lcnpZwREMeiQKKyVEFi\nCzjnijHe8lZOCnvCkrvoKZGCUYPzK6wkfVyGNYWk/64i0loHxaM5fy56CQJ1\ntbN8\r\n=ATkD\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.6_1555512112892_0.7320048518774223"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.7": {
+      "name": "estimo",
+      "version": "0.1.7",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "cross-spawn": "^6.0.5",
+        "nanoid": "^2.0.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "8a87a282feb1324ca9e6451f73448d89e4976e24",
+      "_id": "estimo@0.1.7",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-OTZ5NDIzSh8Qk0KqgQjJGbOesupJacELWHE+kcvdImZJNmfgsVMSnQa6IKfUiqBkm8XTZ+zQy/h0eDQeX6CMCw==",
+        "shasum": "d94b65d4b97120638cb0e85c7ad1fd04dac34f7f",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.7.tgz",
+        "fileCount": 19,
+        "unpackedSize": 25065,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJct6SxCRA9TVsSAnZWagAA70cQAKNFyCHVxZX7CntJpB70\n1YahhpXEO5m+aJmlfyZih6TLLxQ3f5F2ur5G6uVJfbKnsbWA0pFlRheOObSn\nI/qsSNNd+szn1hbixkXVW9mhWGnGCTC3Gz2Tw3jRhm4O7qIM06+uTb7QbrB3\nv3zxE+5s89fEarDYbZhhHPhFjNGZSU4pTOFDn5PKO1TDmgqfUv2ZbI6UOcJv\nY4yUx6TUN2RWprDB2XWJ4jimGbOCOFDMYUhIO7F+/u8ZSBt6Mp3EFrdvH7BY\ngcEI3SAxtzzUczP7Vi7U2W9ww63hWcXnOg8hfJnXu/EQjH61zUuFfnQKxQG5\nFE7YEHCdNV2yx6lYqhCqz8EysGuEc2dhUEntHJAFclynoS04HbVmejhVnPb+\nt1PNXCpX3JkOItzXeq6BurUYcpAzfbGKzNJ+QoJBw7vnbEZVRLnrO5pRjBr9\nEzUGjG0XM4/IB/a/iHtIAMcNnTREYkvkUShw70ezAcFi0f+LVu23gd7gI/yi\nW+gXn8LbiRk4R7dJu/KLzBerAm9OemVIF3z2QdOlPXoLaA5yPj0uEpZM/M90\npd3paZ9Zu1SZbGpOiGGq5pXjtDdwxsZgAgpVpIP/2+PQoOI7Zh14dN+clMZl\nIVFlgJMMPcMISCNmTAeSA3CDX1X/EU10S5aDAJ6VtLcmXxhulMHxCzmiaLd0\n9xFC\r\n=3kz+\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.7_1555539120926_0.5885871183520646"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.8": {
+      "name": "estimo",
+      "version": "0.1.8",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "cross-spawn": "^6.0.5",
+        "nanoid": "^2.0.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "24231650b24a9d3ca11e2472fb746e169bc7de57",
+      "_id": "estimo@0.1.8",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-mUBC+hm7eH2j7VsfblEp7C/960dZtZmVvIB667xDm3xX+WuxVyab4eaNZ1xr0WzZoe2kT8/2njz9v4S/QaODyg==",
+        "shasum": "650bac6a14c25623c01733a3658ce53111498db4",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.8.tgz",
+        "fileCount": 19,
+        "unpackedSize": 26377,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcudo0CRA9TVsSAnZWagAAlesP/1y27y2rFs6JCTdaf2+K\nhSjuEA8X0l3HyQZp4yl6oPrky0lt6qjGPvHejgNd9D7AIEhd+C/7gfd9LJgL\n3uDX0qMLWrBp47oleIL1FwfpbLZRtfCcVRXPA2RUucgjiTS141+S1I7tHtLh\nbC8MQVFJ49hhRCmBIa8jcEiX953IgWibP4knW3EiaHxO4cSB2oP3QXYVWP4Q\nqKX/RGdu79zpJydUL4L+DvBw/nyfpIQbUTKv5XJqtMZ95jvP9ht9kHikhCZw\nLc9uPGqTB4X94GhamTbZxKNtAO92gfs/JGSYKQJCfudnZdZ+3vy+EWJZ/cm3\nwmeNCNFXQFH/coSakUBVnTBZsei8jB9OTp/QTI5daL/rqW+WpMeI50l2dEfR\n64ktiNkWWtq+vx4HqqrzV8AoaQq074+X+jGWLApvoSmDQgXC1puicBNenH7j\ng2E2UzPoach3gWjXleredli9K1ZjzcpEaGE5l6/JyoxacsWI7KYWT+TPn/PA\n50R6wwjknqrGnpdSisqLfiBYyLw9Ksm2qx3fG0ISVUKASdNBYjLwCOTQpd+r\nuXUuNzXZchhoIYEr6SfPUw6kJd1PJikNghn0jZzZ7+YBEWziOvJO1r6Wkv17\nOhqWxUf42zopO9UBBnheYxn24HORzg4IS14OlqZLU/63vl0G4C/QF0QMVYAD\nsAjz\r\n=6ovG\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.8_1555683892290_0.003083568601444542"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.1.9": {
+      "name": "estimo",
+      "version": "0.1.9",
+      "description": "Generate Big Rig reports for js libs",
+      "main": "index.js",
+      "scripts": {
+        "eslint": "eslint --cache src",
+        "test": "ava"
+      },
+      "dependencies": {
+        "@condenast/perf-timeline-cli": "^0.1.3",
+        "bigrig": "^1.3.0",
+        "cross-spawn": "^6.0.5",
+        "nanoid": "^2.0.1",
+        "yargs": "^13.2.2"
+      },
+      "devDependencies": {
+        "ava": "^1.4.1",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.17.1",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.5"
+      },
+      "engines": {
+        "node": ">=8.9.0"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "bigrig",
+        "chrome",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "9a23ba17818c33da1b6add0f0a358fddedbb9cd9",
+      "_id": "estimo@0.1.9",
+      "_nodeVersion": "11.4.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-8154FqD1aaJuj95BKazdywVmPa8IIKOVDE7s9MFZI6s4QDbTZv+ITI39BMNwdzg8zcQ0/utAvzfzSJI6/4HcrA==",
+        "shasum": "76875dc8e3f8c7b4d0e11ad0bccae1f6e3b5368a",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-0.1.9.tgz",
+        "fileCount": 19,
+        "unpackedSize": 26373,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcu43RCRA9TVsSAnZWagAA7a0P/1DoAKMdPBEpnWcEutZ/\nUQYQWuiRB2JeeL52bKhVmjETs3aW8LLo8PEtzOQLMOGru2X5Y7cu1k1myjWZ\nIb14kMuyb5cYRDGKG1Yp0zuwTl0FLEBAJsPB8UuiLEofl6HLUsKP+QgN1JBG\nsjb2K/78GK1y6+/xvdbEqJZ9kzCQ2VoKakv3cEFWvazjLkUAn3OrSAaTUCC/\nTEqDfD94cJ643XZwRIAANkpmJqUgHEUJrM9Jhctgla+xmsU/U3uyEJB7heeP\nmZQxpq/amKwY52jv9TMTcOg+BsJFmF7h5gl3aMxVqPV2NJkdKGIyEnT63c6f\n3Q+0z694D2qlzr7cfl24IzhY7yG/kWqV36zRpQimZBnDrfFoyXBzz5NDf7/N\nprrd8nMH3ft3T5DiMyUxwf64fId02kNNxj09G98cTc9Px/LZyOwM94aTw1ji\nKQZ5ZIlLHgHlsxUYk5QGhtRYIMkPrWh4SspKVB0kv5zcwNdQYCzoldfNeU7I\nn4GPFyYTFB/ZH7hnoJQxjUEuDvDZTvI00jBC0PS103/AqDM5NsHJxk/kF5xi\nMBWc1KHR2PPBDSX6xHZEaQ9P6FmPEatifE9W7KFQ0OIW55cx2W5tdPFYblJS\n8jWn6GNvaScPXM9rIJZbzDSZOw5vtRSTMN5Q4IMaetLvo2oB3gSL5HLcLL52\nbZjB\r\n=sfMX\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_0.1.9_1555795409120_0.6600550223105266"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.0.0": {
+      "name": "estimo",
+      "version": "1.0.0",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^2.4.1",
+        "lint-staged": "^8.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "fa7240b9b9a83548c39b23ec035ef983f0eae30a",
+      "_id": "estimo@1.0.0",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-tQ5fyHfsrsSE/45XK1AwtPBkPrr37sr8n21TZrwu9zrf6WnPWH2Yq+bno696WKu/0LURVxlDgrs+PlHphhoAyA==",
+        "shasum": "010e7575a3029e0cc9b632d84c77f25ccbc15faa",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.0.0.tgz",
+        "fileCount": 26,
+        "unpackedSize": 69150,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdCrYHCRA9TVsSAnZWagAADloP/jIZLpuwAMEQi188zFKD\nighGjNSNXgvcQfWgwj9ui9ylySvzlyw3Wv6eCGSDgyPHbcPcR6WyVHxm1hC8\n1PSgodQhxERlhTA+9Vl6wc0cDPOQqBcW6pq8zCq8d7Eu1uwYOcneHy96AQHT\nk2KA+1zKQMphHot90RRBckav2G+blXc4mQUzY/XqP2K+3wPQBzrdF0VkqPcW\nDFeEXris26jcJK8mx5Q5FqEoaM+A0BsMxRhe+SQyEWOl5+/0yycEOFCjBrfh\n8pdjlvzNEOwncjNx1jZ3gYH7ZwuOhkbBV1iOAZIu9E+DyYXW8bvXgl8QUOFa\nfkgR78i8aw0/4fa4chlpA6rCKImbQyscu2mKEbktap+5p+qGR+DV/oUMskc5\ng3BwFzxMkURHZhCKE8Vb6oc2YggcA8LjPVtX/yUnKV8n6eorz2zHZN1sNLpi\nShT8PE5rLXZYAGd4uC0hDjlGSst777u7Xv8iF0XEi+iLoQGn3HmT9mTfe97b\n8iM9rbKyFA94oZUs7P3BoX5MCjJuPlASxbhA3e7dU5gMQ4AER6p1VY/vAAqa\nFkr+gcb50pKwSAgYR3ONJCIwIrB8eyF8tln79u91aS7erTULYNUorCaEk3Qj\ntw9DH6rUUSnwwhp4OmSQEfXuWoByMw/njac1QmpEx91Z73JUl9U99CinG1wZ\nc0C5\r\n=LoWZ\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.0.0_1560983046520_0.05083479600923946"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.0": {
+      "name": "estimo",
+      "version": "1.1.0",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^2.4.1",
+        "lint-staged": "^8.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "2ff35b242c61f009a6640ba3d892ce3b5f7c2870",
+      "_id": "estimo@1.1.0",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.0",
+      "dist": {
+        "integrity": "sha512-zk1BTFXSzDuwuH5+3pHTxA00QQga00775CIERMqcAWT9gT4Y2f52pte9ljR9N7xwXA1CI3AZUEYbh2FEFMGB/g==",
+        "shasum": "f9229677e74704c39bdf7cb727160d7abace8a88",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.0.tgz",
+        "fileCount": 27,
+        "unpackedSize": 70859,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOUT3CRA9TVsSAnZWagAAvigP/1+xHe9jvZ0l3LY3L1zK\nKWdRxilqjZ5aYkQk3HVRFNl4bzRySXSYciDDMwOQDwt0iR7ZrFx1nEl2buqT\ndJLYniAiTa3pypmM/P7ubFS9AMn8CMGaS+ZuY35scOQJfcXgR2i2LJjfwQP+\n3EdTtod4no6BccIdMfylvi2TO4a4ShUPT7vRhtcjbeP79NLVtSQW7Eg/nuWa\nws839eCscbYBRS6fhCo27kARUnVyyPzTSFXdo9EFNk8sFomcgp34Ep3nN8te\nHqjGwXi2p3YUC1f5CUyplEGNlDFcvPmju2PRnnRY3p9kmsriTCnLNR0Qdb3j\nCrDwaInQNAu5v3LEFZFDcpcqPL4kZEI+SlJcDBPvF1Nb8C6qvVv3Jd77FBsD\n7x/DY+eKeCFMpzpB8GdiZ2tTUzhZK2pCX4DkvyXDHZL4rTyVJO9V5KtLszYu\njiT4LRUtf57msDnCMR3+CriPpkz5ceoy6fQ2Limr+MNWsGLHXlIcqKMGqRaq\nkNR4zD3DVL61aBDSlfoRoZLyBZyfafd1OYXZE0cf8o3rDwmFs8CUegqmPjUe\nen3gs9T0o8WOGVKTl3IxcPfBYarsE2McGndD9Qs7irUEuEgivjvmrQRkIODV\nbB9vcVXB3EjtYW2tTPVbw64nY/EEdUSqKDPTr6YgP4dfWK8WSlHq+NtFIUk8\n2LA4\r\n=dpAg\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.0_1564034294063_0.5410542218692793"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.1": {
+      "name": "estimo",
+      "version": "1.1.1",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^2.4.1",
+        "lint-staged": "^8.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "4fe97e0a3f13ba170daba052ed1379ba3d0b5c5d",
+      "_id": "estimo@1.1.1",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.0",
+      "dist": {
+        "integrity": "sha512-BNPCYQ8l8Bf1OTgXLn0hIp4xomib4/1aQDd4Ey3tXKJfFZCgU4tpenffCUOZFNiZad9zIaS1B+CQMEfh0Of8GA==",
+        "shasum": "47a7abea48117bf8cea030ecb19ed86391d36535",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.1.tgz",
+        "fileCount": 27,
+        "unpackedSize": 70940,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOUduCRA9TVsSAnZWagAAKvAQAIfJQFdCV3IdmMa6C6BR\n27lQXM7Uit1s9vjLPPZWeMhblJ97htXQYW6X7UM9tEk9KCpiOoU9k+M5Shm7\nUWN9SC+tr3JTQDuArT+WZ4MMG0bFP61WHIj0I6KSoZygT7LLS82M+bh0w+sx\nScici+m/z/q2mrJYq1TEOuaaO8BlKnmcV6hBh1MtuJmZRstrrWfkqKLUQ5Sw\noUqbQhk3sWGc7FWJIlnzU+7AO1Ifzs5uQFPP6f1pWjpjWmC+3XbyqMly6VrY\nVlwYrW7zs+DBZ9K2oG0nr1D3dE+befSQ7O2/CCVbcD3nyhFU7W2sZC1umrPK\nXDPN/JRIbdlyEGhilCPk2nEjJqpN9PcdBirdW88PtX4emCsIPj/0WDEz3Yj0\nraA11m3PJRPKSqopt4WYbM8PxmlUSjUQAG+v7yPn+JokgDNPLfSTHUEvxD6N\nNtT6woaAqzbrVovvfU+Lp/c6AHDedJy2gmW8V8OJU7HRzW6TeGYdh1ISHREg\nNUwHR/oSTW/zbkd2mx9KoSCUk3fGKQBqiSEP8l0kBWkLpZixj6uYseAs4fDY\nUL+tAMmFJfhHzInOGZIS+S6UzeB/lFiKVLqBM+TTtIb8QmQy1tOLMuYy1dGX\nutq25Mc9R4kIcC2cS1CcZyGTQf0qA2DiMJcmWdNL8hXhdxgLL5Epx7eJM/aG\nbeFC\r\n=xn5C\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.1_1564034926121_0.45768615136850466"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.2": {
+      "name": "estimo",
+      "version": "1.1.2",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^2.4.1",
+        "lint-staged": "^8.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "597d55352ec20cd7aea1fb52e3f2a21d0eaf5555",
+      "_id": "estimo@1.1.2",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.0",
+      "dist": {
+        "integrity": "sha512-YKoYC9lvbPUNG90H2yAAx6g+oM4Ign23cwm79Zi0js5a1QYepCJxLZaD6AesmWOFjZHTYon11L4kVxoEJVNU+w==",
+        "shasum": "2ce2c80b345437cbeb4a5c3ee50df47497347f28",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.2.tgz",
+        "fileCount": 27,
+        "unpackedSize": 71041,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOrHdCRA9TVsSAnZWagAA8DkP/RjIwnoElync+stNuXYU\n0jzJ45dZYSrsZEz+mU+W5QQ7QlIout9J4NvXw+/VJWNnL68fSUjS0mzTTB9T\nhzWoV/IeVeE2xzWRp3ormhXHAdIeGVc8lso2+2P/Hz1OP16fjXTDt/f9bNjF\nvQVApVLwOybNwVAo9tNICO1XtBHVHUG3pxDX7zhGLv7MZFk6kppICRD+xnHs\n977E9yqJ4ZwjnnGdIPNy4PnoRrPKaj+EuPN4sHsiKoXSp4WuzUAVqXgeVFUo\nwB/iiwB8v4HMNbAf04wI+dImjm4UAP1cxWSYvUSVqEOFDU/F6j8K1JSz02lQ\nzsnKLtDH7/9BtwJ7XlIW88bv5fORDvimw4aAz0lyZE7gtT7Frhy8HIBkixk9\nu6/8M3R0AflNH6jEu9sX7GH5zyEv0mShN+zSr0pz+uAzIj1Uk3YYwFBSbsga\nA2z78qjgMqrmWACw04bg+NiIomvtSMsrVoapxMdE1zYhXP0LM9A2lqeuRIKq\nYtLCgcEUjzdmWGs4zPyTm4JpSsUK1NGa7JCNoNKvg9Vuyq8nAYyzl1efn5oV\nPmu1UAMF2XLSfv2SRm/oXcp89C/gsThLjGHllMnUWh6t4whje1XqzRYrSOfO\noI6ooFm8SFI7h5oZJJj6P8XETkV79/QcJuD2wruoacPJaNBsX/hzBss35Vxe\n1Z1X\r\n=nzcr\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.2_1564127708350_0.5552576266250715"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.3": {
+      "name": "estimo",
+      "version": "1.1.3",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^5.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^2.4.1",
+        "lint-staged": "^8.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "addca255898ed195c7116e1f86567d95f51b82d0",
+      "_id": "estimo@1.1.3",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.0",
+      "dist": {
+        "integrity": "sha512-U7qSoX/jHv+9KT73BuBG9YjMK+0GAlTpSOQ2Qi57ZRN3YK0G3BJuxsw7LbDyJ6PqP5hI/azg6qesU8E8H+pXSA==",
+        "shasum": "aff3307cadea3780e6b142814d338bdef4555087",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.3.tgz",
+        "fileCount": 27,
+        "unpackedSize": 70974,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdO2kKCRA9TVsSAnZWagAAYl0QAKUOg+SWx+OdhA8RBZxb\naqVXJtU0jaFFeJMlV3i4WXwEC/zEb53l/l1wpAVkEmGLAxUDVmlgqCejlWmD\n4jpn9c8GNMH61rdc4WLPTNEIjDCsi14Y+i4srvAqLIaQDVwX4HDuuoRy+0AX\nYZIvHFBhCX+lDsSXlsOyqhUmwrxEJITdveCQ9hXPO5Vd3DeAC31Bc8Npu0g4\n9KTSGCmrbmJnR/qXN0h4EOqDICIQoiCwfpOzpFYBA4YN7X0frlBNl41a5DnK\nNKyCg+IjJrCaotSdnacnBFd/Ul9iAZ7GdNEz/KcWLjNvaZ+iM9+phn0We5Oa\nA/i1ND8Eckd5fW9MzMDGdvdsj9o2NrZqL6Cxwe7yggoUV5Xptd2w7QYSqCVU\n/z/uL2MbVHufWnFUgQ3yqIpAxvAtfM7TNxOGnZoksaXpwLsCiq4po//eEZNY\nKI/+Fof4LqHLfXl1WgTcDi4uMde7gThEK0bXTE0vvsmWaPz3MVO3r2vK5OqE\na0No10rv62OXOCGIf3a5Rzj0uw/4Tc4EBirmXHrGJTCkVz9srvMHcZLqMpeg\nGR2EtfpyRJDxrDYsuamNnMHM/fxv/gC7gqqRc91R07VRY0SJKNZLxrzXrYAf\nTnkZpULU2Hk1XclL43uikfZ1wU4dPl+YmESR2OOEM4DM68XzY9TuhgoJNW/n\n7vSc\r\n=PvMq\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.3_1564174601424_0.2588618464172554"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.4": {
+      "name": "estimo",
+      "version": "1.1.4",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^3.0.2",
+        "lint-staged": "^9.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "5d94f5ae2af5d1084c5466be11130c03e800f4e3",
+      "_id": "estimo@1.1.4",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.0",
+      "dist": {
+        "integrity": "sha512-MNJIaxRrUY509KN+Rw0wS46GnZmWYNs/xirU46kB6Dk+Z0tEC2dlmwb7GOhTAawJFzr1ttBDCeKII6pKqgW1SQ==",
+        "shasum": "8167f54c640b66e168137583174e577168cc3ee9",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.4.tgz",
+        "fileCount": 29,
+        "unpackedSize": 72380,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQpEuCRA9TVsSAnZWagAAwdAP/2HYAo6mYw/PnLvUPb05\nGGzPmePzLIzczHPf93EzEsBjVpTT15ikC6DVvVXNWQD4r4aJx0dcd1cr2goS\nvTPRi1PpgHbYcM+Tmry/B+/iJM83uw0RNMslfZbBvOqFF9s2kM2vwb/tFp5F\nJTPc1XoYd28iI7QaP++z0HUFwe0BJC+mQSrdcKZimkFZ0TW0fFhqhx1fwo/K\nUjAAk8k7dSHkkdtZ2o+picbKJrygEOkn3nRZNUQfKelbY/HD5u3AwuAoMiGI\n84mhqhhJiq6gmtg3OEDPSeSXwNqK8X17VaZ957BIPKb5kK7wBOL1YdWML5DI\npJSEF4RzoqRBGAuHdhlr8LNWfUoBkv6tW+wvJxcA8V2ndQTjBi0HShm73gne\niB3btoNM0C/sInUKKvsbsvOAEV94gpFitqkCDQeNjmFZEg7ShXyLZ6QTxsW5\n7CtDDYydcSP7FQvVTeA+1mZM3tBxCia2aoVeFUPf0DXPCCJqs5fT0AE91qHV\nQY7OLMYyP9aPT6myfZ+31XWr1hEqASIEM0z5C1D6uSvcUdCIVWA3o0ZTGEp9\nbwC/W+OOPob5AA6v9/iNmCmlb+Ox/d/tmgAKtJXZzu37hZW0fBPWlTnFJgo/\nvNuqt/PybJP50hZfojXRPUVE57g9cLkE1tRA2dhGN/A/OibnUxJzWB3foKlM\nJOkr\r\n=7G1g\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.4_1564643629833_0.9054063216771915"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.5": {
+      "name": "estimo",
+      "version": "1.1.5",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.3",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^13.2.4"
+      },
+      "devDependencies": {
+        "ava": "^2.1.0",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^3.0.2",
+        "lint-staged": "^9.2.1",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "666f022703a1bc1c7d65b6973e1b68ad9a8d6836",
+      "_id": "estimo@1.1.5",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.10.2",
+      "dist": {
+        "integrity": "sha512-UjORJIGwKLwfbejaM+rIQdeK0Ra8VaXyRwmETXQRk942RZyFy5K9hNlkFxaStIaTkB5Gu7xkar6URlOrfk9e1g==",
+        "shasum": "b2e830e0413af1b19aa5f478f7fd63d7eaf79c57",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.5.tgz",
+        "fileCount": 29,
+        "unpackedSize": 72431,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdSdU1CRA9TVsSAnZWagAAiSQP/23IAV6mPeVFGN/lskMw\n7wa9lBmbkkHg12eAv5UKmdEt7zAiW3FdVl71wefdpJ9/RqjoTIjyipY3wAYw\n5GmDYwM2mcRK/PXYYHBZukxoWzxuOI6NVxsBcnjYbn3j7SpvJ4W4XXczETAn\naO746OeRF48yVFEpq5dmdHQgDjjEMn/N9+Hb1sRlDezpfxtdqjy47DvVXp7V\n/FP7Z1rVOujAzNxk94eWaUhDhaczHYALeBiZ54JBstFgHaL8keNpwWvnbkOm\n2/gXYtULB/DLomnl7f9npv0UliXWDtmUQ8ccpAEXxiB2b77nh4DG6HdNYsF/\nDZyBytITmM1JPMhbQNs7z0eqg7kGStZS4gDCFadCg7yscAIv+XK5NJBdUUcW\nGP/73dMCQLYtDiw8wCz9rvYuyOFPzO+KimucTyYtx70O8KWnj+ZwUjWAtWa0\n9wlBRvLuXYPjrZ6FI1jW9cUKvyXUVUo8f92nFZIZwtl5HdA5Wmt39zRhYuZL\n3kGwINquuq81TlKZ4JOu92kW67yI4D/NqLRR0RKQ8Ql48RyRfgxz5bgGYHWB\nli2rLxvGkQcXLCu9EWRA8VQ4sQKDtU/s21MsNDQ1nvYYALn+UA7q/KSNUG4j\nZMn8Izs7Hb0NjUEMtu7RJTZnpEuKPsPQoF3a9nt0dWCfJIv/GrkjEbRT3phX\nh5wD\r\n=KsyE\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.5_1565119795967_0.5024118359169674"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.1.6": {
+      "name": "estimo",
+      "version": "1.1.6",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.4",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^14.0.0"
+      },
+      "devDependencies": {
+        "ava": "^2.3.0",
+        "eslint": "^6.2.2",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "87ed526742da23b889caeb9b5bdf4800b9e78400",
+      "_id": "estimo@1.1.6",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.11.1",
+      "dist": {
+        "integrity": "sha512-SgZmjJSCB4Ho/45NzjQMgfpLhgIVHdwNg/mfoNjqHymcCx7NpiUHfrkd3ZqnbvchREYgjDpRzFAGoiapiwXJUQ==",
+        "shasum": "44273e99de905848fe4a3ae8f0f70df8c8b09b33",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-1.1.6.tgz",
+        "fileCount": 29,
+        "unpackedSize": 72433,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZYtXCRA9TVsSAnZWagAAM94QAIgsP1gqFDOzF5OyRvvM\njUaYT8pQ52jzROCi4/U+Xq+qU/HrOWq/aEKgG5risiEe2qgqRedD+NGNZ/iT\n2BNZCVxUftR4ILvVvwFtEzl5gC+K37P1W2lQAqxjPMCL58XR3OSwTWFVLpVR\n4g4cpFhLjKkHk3sbr3pvtqoHWs55Rzlmj3oazh3PEnFqxiJo/sXALCJ9MrYA\n4sO0+NO3nsQ5oQ+1IL2e2r2ZHQg8K4RVoU6UTxEl2hFdwTvE+penHG7JawBi\nBrjOkcjlRu0pOSsX08CJd3ak1d9CBBlusau1TtqH378zqTBJZnWd/xwtuSF0\nOQLr8CY4W0jQEN1elX0N+P4XdtI/OLebEihbCBoAVIW7GxpOtMZXyTYZSyIp\nQEGGlurP+C7y7tJJnuLxkXvsBG0F0yTmw83csqXVMQ5mEpNpOSAuL+pS7dwh\nuZTan5qSIj1mh+OjrgWAQIZRU+QweVlu+vGF3O8lorRDQeePpFkYbxvkSjxy\nF/3/1VEdTDaU0LD92x0mHvn4T7VRLA6/kUiMBJIA8jiYMpuWv3JO3DCJUGll\n/1XnkKFbY6PIFz89gx8hC+lnxYvsROKgETdmPwBFGl05VuXK0gV6Qid/Xr1p\n2BphDy/JlsUksYZ/bHeD/sbR+r0QbS/KfH/14Axk2OpLFtZPtuVDSzuAdBYq\nNxjw\r\n=I7v2\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_1.1.6_1566935894882_0.8320161730206741"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.0.0": {
+      "name": "estimo",
+      "version": "2.0.0",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit",
+        "test:launch": "ESTIMO_DEBUG=true node ./test/__mock__/test-launch.js"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.4",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^14.0.0"
+      },
+      "devDependencies": {
+        "ava": "^2.3.0",
+        "eslint": "^6.2.2",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "2a89f8f3f981341b107b9db8b30fe3b86f2493be",
+      "_id": "estimo@2.0.0",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.11.1",
+      "dist": {
+        "integrity": "sha512-K8FZE1Mr0TcGRR6Qzpb0DXrDCphnN8PD2d5RWhPSvt6YFq10+M8lDQi3p3FtHqHdO3WUueFJHiRz0FugSp3/iw==",
+        "shasum": "fc926935831848f69d0ddee3f686b2f561fa2c3c",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.0.0.tgz",
+        "fileCount": 48,
+        "unpackedSize": 96053,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdcK7pCRA9TVsSAnZWagAAao0P/R6jX/GYdKoN909VZ9UI\n7ZsEh0UlJ41PEgyN0jZ8PhEI55iSFBBa2Fi6Ms1i4fKWf0BOacnf3CBGMD0P\nf7DuKraD6gddBDbIedabOuoLDmMyygo5IJQcm67zBdISsKz1WKZTtInJWcbt\neFQPXE/pglzOzQFD4gUdnIcuWL32dNFKxQ+8Bpwgl61atDOalOJYgbQ2dMkE\nzdqTLRj1ZcIeDvMhf9TkZacZaeqoxHY/EfQ6Rs2kdoOO1qxivaoEgXYC0LaF\naMmllEeCr6f4upe84mf3EOd4Z0k7z47sgE4DuxZxQclaoBhFzjBN4cXK+gG3\npNH68pKs/x9ehlzw2FMYjABRaMzyZDbwMs/tTI1PALn0/V40iMnRuLc0RC1o\n6kbd6XMOrrdMMe/WXnClHb/k+0+0iW+npsBDh0j0Uj6Ln1EdWESpqwX+/sH7\nAKmFqfw2SU+5LKemuLEqW3u0EL/etps7HF8bSD6ztcGvW3s5o0UNT6ngRHz+\nZvpgnFb48rVF+TjucCH5ouqej7DfP/HJQTi06NPj5XswQGSsRJEGkffnhKK3\nv+3X97C1zlAMgxNG9DKa074AHSNIIVKfp2HGxevA6Wjs+kh2CGm/kYh87pEp\nVfLxiVvkg3t7sP4qo8+/wKy5nVXHkulfkCXp6rYzQU6Y+XztwL3rdxZz8r5y\nWHYM\r\n=oyQF\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.0.0_1567665896371_0.5287664623463713"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.0.1": {
+      "name": "estimo",
+      "version": "2.0.1",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --exit",
+        "test:launch": "ESTIMO_DEBUG=true node ./test/__mock__/test-launch.js"
+      },
+      "dependencies": {
+        "nanoid": "^2.0.4",
+        "puppeteer-core": "^1.17.0",
+        "tracium": "^0.2.1",
+        "yargs": "^14.0.0"
+      },
+      "devDependencies": {
+        "ava": "^2.3.0",
+        "eslint": "^6.2.2",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-import": "^2.17.3",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "./scripts/cli.js"
+      },
+      "ava": {
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(js)": [
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "0de830efdb33f7a745fdb02cdfd8e574581162c1",
+      "_id": "estimo@2.0.1",
+      "_nodeVersion": "12.2.0",
+      "_npmVersion": "6.11.3",
+      "dist": {
+        "integrity": "sha512-appoEY2xch2PZ2ykJOxkOiidVWjCeijZtTPgs0wfRwsOCDP3umyuuneZhE+Wmh2sj9MHf0/QYBrAwTNvfKepew==",
+        "shasum": "3f73f3b18cc21f0fd636fce0741df69d442520b8",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.0.1.tgz",
+        "fileCount": 49,
+        "unpackedSize": 98434,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdxSyhCRA9TVsSAnZWagAAPZ4P/3WPv7F0XNb2bmTLjGR0\n5FRCHwWUPUYmIot+vwbmvriRdLC54BqnAdyhUM6HJYCFDNzLczW2XgkrZBBW\nzfsLwzwznPBwee9XFcxodeFeCiBjm4PGQUgSkE8cz2Mr+1iVTdb7ApUky79c\nJJYIwkrcTEHVP+nXuuyOda6Uf3Bsxf2z5v+tLMi0GB2f0D/R4SA7AR4PxiWY\nWGg8L9rpmvKAufQnEjiyixpJ5vlGC3H2miu0hXoIz4tNBZvZygP7zK7yikpD\nHkG2/0Z8B5x3QDJAyy8VHCRlZN0rwLZCT6VxEqj+yOBCwuRfFZFPlsz953+6\n9t+L6wjyYyiyiM9e1M5bsuRuAbAX4lN1I5Jfp5AAtT5L6yWfMrFhLwaD8hcd\n5b60FxsP0pDrjz4pJ28lFlessHXEUXwvUlsmGDiw3xAbYFzIY7e/tFmKLe7i\nREiIzs3c7JgKn69W8Chd4W+md6kIj1z9/Q4Tl8yT6tzFV/6u427a66L7OWky\nQmGgja8cNbnTqTHrbLfR5zRGOqWahk49yxeVXXYsEdAlveUxRz07P2XVlNX1\nSl+4fd93waEm4zjWRr5EbUTkq6+7WCsJxPDglFG50v8SDxVe9l9IS7/oOcu3\nWurGD0BhLIJybrEmmFxQ1sp5jo7O71imIVpxrTecZOg+kIjcHG8dgS2MgltZ\nsDGw\r\n=1Kda\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.0.1_1573203104758_0.7648732000490273"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.0.2": {
+      "name": "estimo",
+      "version": "2.0.2",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=3m --exit",
+        "test:launch": "ESTIMO_DEBUG=true node ./test/__mock__/test-launch.js",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "docker:build": "docker build -t estimo .",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-conf": "node ./scripts/cleanChromeConfig.js"
+      },
+      "dependencies": {
+        "nanoid": "^2.1.11",
+        "puppeteer-core": "^2.1.0",
+        "tracium": "^0.2.1",
+        "yargs": "^15.1.0"
+      },
+      "devDependencies": {
+        "ava": "^3.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.0",
+        "husky": "^4.2.1",
+        "lint-staged": "^10.0.7",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.1"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-conf",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "48feab826f482943ebffe9fdef85484a1df44f2a",
+      "_id": "estimo@2.0.2",
+      "_nodeVersion": "12.14.1",
+      "_npmVersion": "6.13.4",
+      "dist": {
+        "integrity": "sha512-kMWfSqqQzKryrwS/E6rxR95l+HJAUrIo+NYnOD/6nvbaSBj5/uiQer+5VVkN0l7NFZBbcjgq0hH2wAytptHkUQ==",
+        "shasum": "16e7cd6e83452961fb079c42d1e6a982fd356d5f",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.0.2.tgz",
+        "fileCount": 47,
+        "unpackedSize": 435797,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeUDOtCRA9TVsSAnZWagAAl+4P/3HFKjwRa6bleUx6T/jP\nLjRzloPYYVIsIZuGxuo4kGP0+auCC62HAuVG7Qsf1kVJIpbk6XtgltzrW9sa\nSFgAymUPfb0cyWAy+qj0cup9P7ViYPUfzmJRQT46/X64O7uw2wylyfxBZsz+\nvRJBkwpRRAO+ovTiwdkFjBUZps39EQ5wjcYZAxFef7frvpY6nkzz445EgEX1\nzT+cKaGVxAWbmgenef/54R254ZaKTUur6dtiHKCKGTXKdHzMKagBX5zZSBPx\n/A8mLrX7YJkn50DZxNb/WLBVY8QKaMkdV+T28douKyFKAELu/qbi+wryoVe+\nLytgQVUD0lIyZspbYd8QbquYKvFlx1ZEw0DA/fL/Dx55U+KUq99AB2XbLoLo\nwIvPhHsKxjrUWX4SoNp8qROeRIMNXm+Fb/FZBTIf5Tjymb9IZ4aBesxypxVT\n9I4vamYEEUp7lVGqodx6vLtXroyVt+dARhbqPQ+o17KVu6CKnbeokSQ1Xbwz\noWbHrWNnMv1ghcczElOCGGqBo8aHgSeFfoAdFn+UM6jHwe0SF9+xIyMmhHjt\ne69Znw9tgBQNJdUphtP6IWvWp3r8APkeCS5t7g5jxy9tbIWFj0MuxScB837J\nTyBqg1jpAcWq2zcVhqxgzmaU5gFP4m5iJzTy2Myw6i1oIemi4DgOrEeAaarh\nFU5B\r\n=6IJN\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.0.2_1582314412751_0.8130227061744544"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.0.3": {
+      "name": "estimo",
+      "version": "2.0.3",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=3m --exit",
+        "test:launch": "ESTIMO_DEBUG=true node ./test/__mock__/test-launch.js",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "docker:build": "docker build -t estimo .",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-conf": "node ./scripts/cleanChromeConfig.js"
+      },
+      "dependencies": {
+        "nanoid": "^2.1.11",
+        "puppeteer-core": "^2.1.1",
+        "tracium": "^0.2.1",
+        "yargs": "^15.3.0"
+      },
+      "devDependencies": {
+        "ava": "^3.5.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "husky": "^4.2.3",
+        "lint-staged": "^10.0.8",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-conf",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "0f565489cd25e80a52200a06fd5ebd2964a24e87",
+      "_id": "estimo@2.0.3",
+      "_nodeVersion": "12.14.1",
+      "_npmVersion": "6.13.4",
+      "dist": {
+        "integrity": "sha512-fPt9PawnPYkNNVwScw9JSLZh6F7pA5qHdGTqF0xPUrgC+HyVunKZgPTHQnIKSBMD1bOYykfHR6/QzS3B5UtZHw==",
+        "shasum": "dbbdcef2a5175e446ddf966a5c2bdad172be7607",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.0.3.tgz",
+        "fileCount": 47,
+        "unpackedSize": 435834,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJebOs8CRA9TVsSAnZWagAALHAQAJpKp4fwcRqE9odxQhbG\ntBpgqKedkOo8t7OIl3Tse/fJNyIlgSaK5gejwWEWpMegMPGb2Q6JWV6FEr+B\ns/AEG8gLXWGsNXLs4G9OGG7rkNKOe3FgrOIRyd1opnuofTMzObp0o8YyO6sw\n3mgJNIIUmRFrbGvbxHZBMg/mdJymPDdOOydH6WrdDEYD7lL7BZAtirncMJUd\nYcnTFjMVWFDNBi+29QVD0+kmYUpe4h3siiFh6CRsGySCrGG+G0e7Pw6T1BYt\nL/QBHT2hXKjZm0b1pN+bfpkT1tkc7MGmxMG2Tq8LHMKr0DgHuRFqi+7rxFyM\nQ1AFfMTDeM6I9l13wHAiuaAPNNm5C4c97Olvhcz5jV21B2IUCpZu8P9XaUbQ\nzj9NGFAoAbXusaf/ddPlbZdMsv2fo3aIqTsWo0tQnqd+PGQMwLDv1ekQJ7zs\nNxcnxivu8kif7lOUv5w0khy70OWoMYMHe3Ls3Oi1I+RT84pOIp1B71FMC4/z\n8UBLRgICOv+jUBgcg+5ID8BH1N09G1t5Ac4mU4hoCBYU4NsElpXdwTBkunjm\nd7SoeHX5RBg8KCF9ER16G8Ikg5BHlV7p1TfmlBCbWp0FGV1wz4CrnRdZWqZf\nUC8cWw4u0lNJ7oZIX1qG7zVQR/gBRn4vAoiYWnUKUYqcKqiAHjePF12BgCtv\nH0cK\r\n=5MvU\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.0.3_1584196412193_0.7650755154037379"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.0.4": {
+      "name": "estimo",
+      "version": "2.0.4",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l 'src/**/*.{js,jsx}'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=3m --exit",
+        "test:launch": "ESTIMO_DEBUG=true node ./test/__mock__/test-launch.js",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "docker:build": "docker build -t estimo .",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-conf": "node ./scripts/cleanChromeConfig.js"
+      },
+      "dependencies": {
+        "nanoid": "^2.1.11",
+        "puppeteer-core": "^2.1.1",
+        "tracium": "^0.2.1",
+        "yargs": "^15.3.0"
+      },
+      "devDependencies": {
+        "ava": "^3.5.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "husky": "^4.2.3",
+        "lint-staged": "^10.0.8",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "preferGlobal": true,
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "test/**/*.js",
+          "!test/__mock__/**"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-conf",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "4d6d75168d66e3bb61e6a5c82679e6a6d5e7d754",
+      "_id": "estimo@2.0.4",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.13.4",
+      "dist": {
+        "integrity": "sha512-to1uzlbJwvTO0WEMXsmTP4TC/FiUMEOoF0twuEviuIe8zLrwyijkukGH3pJ3i9ZOExp+ldLE1rhXePOftzUbFQ==",
+        "shasum": "c7fddb8533b328fa7ccd0f502ba455cc5190e8bf",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.0.4.tgz",
+        "fileCount": 47,
+        "unpackedSize": 436036,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJecUK6CRA9TVsSAnZWagAA0LoP/jUGEGBnAWxXPT/RAU32\nU6WqsWLbJEiD9OW5siTindmHkRjfhGdpGNs00DpAZxNODKkNG0evN08lJmf0\nhegG5mDkHnNc1Yw+QT0mVlJYcj9UinGWy/s5mjpHal0c8iwlBxkWQuPRNhtF\nJlQbLUT9HlUMvUq2RrNI4IQBt7+lhL3iUYDOiXwGHppDnI1pTe7kPWcncMrx\nmGEd9tDe5P1D4l748u5NOVHtyH1/7iF/q7pn+6N+gIKMdqwqs75H3QqutOQK\njIQhS5KKqCBxCYPjZ/sgv+dBq2SPQXsHE2h7uN/erim0tVQcawquXUyKk1Oe\nLI5oEzR14h0El7v5rlGVtl3PJDmyU83dVstrElji2kN5AyO8yRk5bw2ayCnO\nZON77wGHrey2aK/jnaBAJ3LwTeIp3Xk5fPR/zcn80RoUfoSX0oiKTCM6SgoD\nN3j+XvS6RxjCM2C0LuvjwMr/X8CqbCCzpCto15e8iw2qeyn7FOTmSv2D0Wys\nez42DwzNrAO0m0c1G6iw7+2rW6qE/arhGVBubH4sQxQK6BYKZI0CoF6zL7MD\nQpNTxVOpdKGl4XWKNnhjRCBBNE36yU//dNAaiYTOpbPSFQLr9qF8WXgWhaET\ntTuakoPGmJau0jkNqrBK4UCaV1TeNo5MtGS5IWXwU/cEbiLhFPFnzYs9mfKT\nSW62\r\n=rwuS\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.0.4_1584480953568_0.0845111266102827"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.0": {
+      "name": "estimo",
+      "version": "2.1.0",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.9",
+        "puppeteer-core": "^3.3.0",
+        "tracium": "^0.2.1",
+        "yargs": "^15.3.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "ava": "^3.8.2",
+        "eslint": "^7.1.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.8",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "abb8ca3f999e3a8efcb259d64ac4ca448b28df59",
+      "_id": "estimo@2.1.0",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.14.5",
+      "dist": {
+        "integrity": "sha512-U2rFwfIu7t93ShJjuBpF/LBjmSfS/U91KYohgQhw61dCVx/PF/fDcyCrUu1wyDsBNWnjDQQ3RhpjtVSxzIJGCA==",
+        "shasum": "be383ba1564f20f303432c020df3bee503c63bb0",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.1.0.tgz",
+        "fileCount": 49,
+        "unpackedSize": 442177,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfDIIRCRA9TVsSAnZWagAA//IQAJWs+mVDmYu3onUYCupW\nGPV6ytWCcXEA/iSPk71iCsfUo5frItyjasV30MhKbuyOVjxu8hqBE6aGhy6E\nMfb82f+P0np9ZS/P1bsN4n2F/Krpjkfu3SQrd2ZU8RDWKdJS07cNFCybz5P5\n2HXtQicLT3uzxM1uYiHfpvtfF8rVX97GHv+Wz5MfBSBf9zQt1axOrbfi2gqu\n9+TnLDZP3ZsU79jPleFPiUzbTUAP9c1Ej3TGm5HdjZHUzOCsRxw/hKqsXKZr\n+YLGWF+bkc/nl2W+jsHbc/rH2GsD6rmSmh0g8mt2PhTd7yebr6rSgJUiDSkA\nRGRRuCDuz0r5oGHG41EyNoYiCRy9iEv9/ntDCnBeyvr027J/5IRGgxc8DORe\nb8Rj3yMaN1oMesXwfIhMXEyOOK6NXcNmCjuRW9kS7VSNxJfqBq962wNuYTQm\nDklST11RxUoFKo67ubCJbHaqFCxfqyS5F1MXozC47JLYfucylKfw/HW+ES3v\ntiaqF74rPbVYQEa/1MFFGM2q9UZJ0TZrQXbUpJmgzZOtCfzUqefqniBH0Fw+\nW23NTDXoTeIJZRnKtahXL9rt8xEg1UttohiGrlyK83ShVfpj3bms653nxQeK\nbVBihyntGEauhKtBFo7fPTbc7g4ff3dzf0pgrFFh/hYMHh9Jp0WdeyGvFdEs\nRm5n\r\n=xZ3P\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.1.0_1594655249292_0.5216015092513862"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.1": {
+      "name": "estimo",
+      "version": "2.1.1",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.9",
+        "puppeteer-core": "^3.3.0",
+        "tracium": "^0.2.1",
+        "yargs": "^15.3.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "ava": "^3.8.2",
+        "eslint": "^7.1.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.8",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "dcad5d3358c85b23b9f364d20f796945e10f0618",
+      "_id": "estimo@2.1.1",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.14.5",
+      "dist": {
+        "integrity": "sha512-kTmHIdtB8JayoonqYok1gACpcsrrDkFXnVnHTHox4Dw9R2BBLC19UhdpvH4gnzxjGYsL2ZfgdaavdgiBVdeN8w==",
+        "shasum": "c97665f4457b1743311a16ec8bd0a74555cb2f0c",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.1.1.tgz",
+        "fileCount": 49,
+        "unpackedSize": 441878,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfDIsPCRA9TVsSAnZWagAAq1UP/Az1cqnmPa9a66Kkw3b0\nLnvHEbnjf2lcXQUcNWt8/QsZC2AcXK/rp4oGVQB9W02UuGYcCCUL+5+JKxxw\nhD8J/V3DPw3WzHaMi//LIVacMxPzE3dWKspfIoYQHKGsLTK2KVHkfhA7AuKu\nkbezFBs/cZNaleHw9/At9H8Vchjf4G8tCIHeU/yIYapfz6o5RR8y9ESkCHLu\ninY79jKob8uvnATptOE3bXllDl95BbU8cLwnM8JsEf5xjI06cuslR8rrR/en\n0kQXgmUx9feuEypvKjWd0w4WbzUruOI7uXT7bED3WC7IdNhL4EJDNDmWZObX\nnyui1bVByo85wSwqIcf9HBH9s6u8iHeh1xfGWunqm/W8fmcmQ/T2z7SeTz8t\ntN3NnyM8tVWVUdnyHpWE9qr+U25kAZuuwY90U2Qoi52ixTJywvDdidSAKwqS\n2gstKS8DQRKOxnYU3CGdSaYNiKIOkeuN297Y6ualVREYJoqsA45dcVfA4HL5\nHu3fr3/K2m2GGv1tFQpbDYrq1wQFiiSTgAgcxhZGP3XIglGWXb+xlSGzBltb\nrC72UCRyLPNtYbhPSjIZgiVwA9OIgaze18FQUwagaoFFaAPV+lfaFbgQKLBS\n3zNTeY+/VFpL4BMbd2/BrXISph6uLVI/WfLUQzAaHrlxak3IdhCCm+l3AXvw\nOTal\r\n=qT8w\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.1.1_1594657551108_0.2825462224368491"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.2": {
+      "name": "estimo",
+      "version": "2.1.2",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.10",
+        "puppeteer-core": "^5.2.0",
+        "tracium": "^0.2.1",
+        "yargs": "^15.4.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "ava": "^3.10.1",
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "85aa2912f0f64844f08f573a53eda434a2cd7e5b",
+      "_id": "estimo@2.1.2",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.14.5",
+      "dist": {
+        "integrity": "sha512-rvCEGDx+Tam4CiEKfl4kqQjdbNl8Z4R2rJN9Yhx3BrS8+NHype/LTWxIGQTXnV3PqafSIrObI4GSNBfdUcexSA==",
+        "shasum": "783815247715832e60f3a2b90a9197cf3b841fb3",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.1.2.tgz",
+        "fileCount": 49,
+        "unpackedSize": 441937,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfFb1QCRA9TVsSAnZWagAAWSAQAKKxJvisWnWUGcG56Hdz\nc4pNWWaoYX3LjEyHwcQTCUTwmKNN3FAznDGbb/IUb/YV4ow1mFqcr254SgVZ\nfKM92fb1TI9Euvh1kV4zoF39jGQnyat7/cJDFr76ymSGULak9W4SuCKgjnLT\nUiW51BcwhbjKhqdybjk7sAE3+hYXhBSfkvG29CC2dWkjR52orFIEZt5mCtIk\n6XWJn8n5RcPtRi5gH0OehhRaNH2px0JGL0RuZRzcYct/CMyXJd7r85Ftbvwm\n1v/4OiW10k2WdDzMLAziZz2wfVdrDVRuZetfJgkzvJ457Lek2MXY5aB3yLDB\npaMDy+5egAaTsiNN6QbR6fBBRkJGsz9yNupmWhjP/a1fqkh/2Oo2zSxLOEQG\nYgw4+CpaQmWRHYZzORUJUCzVyDR3R6T2t0pxm/0dptJ2D9os13unWmBaTMsX\n/tuGncaUxJdYSb3LCigzZY2C3LZg9SkYJQVsq25+zbY3RPPWxtAVabW4+kdR\nn7rRqaD813/m/7Rnn5zvXgu54JW25txYiwJBWLsnd6A6LlzIare+xM7YtZ8D\nn5d83dnFPM7rRyiDRjvPGI0SF6ATYnhzUIRArhpiJ+SJPB5g+uqV2E6RH0/f\nA88WODJ5BBFTg3ksSfZA0Elr2yXADRJ2vJBdbdLxtR4N/cRkLT3QtNZZWnx6\nWUkP\r\n=cEhX\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.1.2_1595260239610_0.366995978922674"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.0": {
+      "name": "estimo",
+      "version": "2.2.0",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.11",
+        "puppeteer-core": "^5.2.1",
+        "tracium": "^0.2.1",
+        "yargs": "^15.4.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "ava": "^3.11.0",
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "07dbd3f79aca929924983a4ba1a18d6ea843f08b",
+      "_id": "estimo@2.2.0",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.14.5",
+      "dist": {
+        "integrity": "sha512-LnHlYtnLb80ExHWmsUP1wIVFGnpg+X/6/BLGPSJBN8UXwqswE/1Yoc6Xuesbhlt2hyTJ7KI0UW7lukUYmm+RhQ==",
+        "shasum": "e0ba7c6ec8de30324d743652cd28590c258daa4f",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.0.tgz",
+        "fileCount": 43,
+        "unpackedSize": 449849,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfIZSdCRA9TVsSAnZWagAAwfoP/A8JhCG7YlCbcrdGAiFj\nkfGltHPcLcMgYdX6lq+Kacvsa64uJJLcEHg7JvYMTC4cMfhGD+RZcBPGn9Yd\nRbUA/CdxLCDfEyLvAT9jIWY66uT29jsciyoAfS0ZUzNHnEykfDol/eFI/XGm\nOnwF1gu6IqYfPRMSteVKsp2G4zvInWKwhAypRXw9QC8gjHpcU94/WMGaK86H\najeMNtATJxqz++cda+n+O0QwMsVLjkgDWyE69scK41F/Tx2x+CwPMPrfK2+Q\nvGMIUQeooQWrRAvdU2BSinkid5vUGmPb9F6jBjBBsNh9fyS9kRZpwYRVmF54\nHb+MVTFg6Iw/r4vNTuq/Yp/9nbuxMUx8G3TQs9Ar4dkXe0GlqJZURXNKyyGT\nr+PXeeO0eMjIsFN7M2rhwsko+f7WS2iMdSutifHdyY7vpN7LFWEJfsKUtY+5\ndcFBydiSMmW9QSPwjXvftosINFeR3z0wlgkDnHORCGZawOtQbfnsziJfE3bl\n7hT8+Ed3ojPF6gQRQY0OYDsHwVeZlSx8KyfR8sodLNBlKvkwR/PgX93uN8y8\nRkBKHMabKCu+FFTKfSC9oK0iFWnX5CCUu/H1XJ1PibY+cUuI3KGy4Xl7toAr\nJJsNt7DNyk1h+NS5bwyxcbBXZfqz9/wFeMFMH810Qt+uHm5QYH/ZxvdCEVXh\n+sH+\r\n=fkM8\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.0_1596036253367_0.9803138782658425"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.1": {
+      "name": "estimo",
+      "version": "2.2.1",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.11",
+        "puppeteer-core": "^5.2.1",
+        "tracium": "^0.2.1",
+        "yargs": "^15.4.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "ava": "^3.11.0",
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "7fcea252beff2a128e345378a8fd7ba4c5e21125",
+      "_id": "estimo@2.2.1",
+      "_nodeVersion": "12.16.1",
+      "_npmVersion": "6.14.5",
+      "dist": {
+        "integrity": "sha512-7lDVQKccyDu/fmrAAkJEZ/LT92EQvmbVBthwaZ7sbe4eg/pMllgDF0oZIXPRgM2z/mdm2xBWQmZc7nlVw0xTxw==",
+        "shasum": "c7060cff8d3425c7fea1d69875da8b57d14b047e",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.1.tgz",
+        "fileCount": 43,
+        "unpackedSize": 449900,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfUeSPCRA9TVsSAnZWagAAP/8P/igJs0B9rpl2tIGp6U5o\nLksPd4B/ixYQB0Jkz91MhuoLefwdWoa7d/yY8yKUuz8jZCQ8/nOP4nmjPj32\nsdsHf/iTbclJkt6TBz1ISx1M2jthiSI3k16fmjppGNuruNieT+bDYl4hh3U6\nOATzOyC/VfNj55W56XrCSOSzeb2u8iA5Jxb1H8CgZQfCkDQ2of1jXGMAcd70\n65yVVu6JqZcwBS+xu/kKQEZOwtjdfmVI4eRg0/VSbMHcXJ5hizp0vnGw8HOG\nO4G9nFUFlZOFnrtrqn3m9E1jH9hgrkcem9cFp8G96FJ/M1BpLowGyBqkTn/H\n5AbDlyZkJQjfigYe5ckvPeiVNbuc8S/AtXlS10J0Qfxv6bQMSG5X6ekJmwOp\nsQLMefuaXkvuK7PAOAb3kZuIx6pBwZYjwrMAj/LgoX2zeA8jgQ15plGDAhHp\n+qcl8TkF1Ay9tZv051hM6G2KQkowD/ufzdCWkmWWRQWrkfceHQU6HLuft/ZM\nyN6cePwnubv63xsZjiEEShW0K2rquJ+GCxdWa+sRTAkpUcOVbRccdqRfM1ce\n7VFX322wX6pb0SBy0EdS6LekJu4VL+R8QKh/eVXAVm8gHOCf7xIKxEmwc9R0\nBbcp7BLOD8+90AhVSqDPyp2v6hjytoE0fRIb61VIEFBqom/ug6nrsRe2YfOp\nwrWA\r\n=voZX\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.1_1599202446974_0.9036269309287153"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.2": {
+      "name": "estimo",
+      "version": "2.2.2",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.11",
+        "puppeteer-core": "^5.2.1",
+        "tracium": "^0.2.1",
+        "yargs": "^15.4.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "ava": "^3.11.0",
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "670ac40d50ddaaceab6ae40335bf26c0682aef57",
+      "_id": "estimo@2.2.2",
+      "_nodeVersion": "15.4.0",
+      "_npmVersion": "7.0.15",
+      "dist": {
+        "integrity": "sha512-08KMAaY8mOld50/qqAP4+Zpd8GuPgBxxaEHLF9JWHjiGzSEVWnO8/t5e6lhfYodii8DPvSxRnOZcOYk/kxXrEA==",
+        "shasum": "cb135b742bdf1958c8d38b137f4411866d0bbbb0",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.2.tgz",
+        "fileCount": 43,
+        "unpackedSize": 449860,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf2QbwCRA9TVsSAnZWagAAKowP/3bepNMo+NngdAEnM6Ox\nZ5mm6Ycc8b2cg/OYGGgKd8N214tUAuE+c9QtXEe4RzS3lpLEu/Aes0dVHkeN\nE2qcQ4gezph5kSaV1xdZuhDXq7zQSEcv62SVrcz2GDALoVkVVWFZpiR3jkVQ\nMzkNRWpF/cuJDBrvJDwKPueinOZRw/uw7AuCzrHIuVXZ5aHq7RaWUobJYL3G\nkjeOs5Bv4c2ibg9JZlht22JV2tpDsnOlIShLnf6ITuErqjh0MybckHpPiR3X\nr7LYsnkrs7zKDm2q++A7TVpQA9Fd1N/e2tQqc1wlqSuqiulDlurg0cvdQJhM\n5V6TxXTILVgdUuZeBsXIteOHQJIaVwXiwJpIAp00e2YgRh6BaJU++ZVcb8OB\nx7qpidIFcpb7cjysyTQ0bLKo9yQjqRIKAjhXf4E8QlTQ1IO0Dca1mswFFSlp\nfRqFK6Hez9gSsbs+VaX1CwyuXQ9t7xRnR94gPfkASPyvCh4YgOWZ/mhUL1rc\nprvgq8GEnET5HmoB+8OXzUXXDnjuGE5aA9G1/srOD3FLu9/zNXMuN4LxmBEz\np9IGX66VQ4qEP+R8Dn2Mo8dsuOLkESclISDQmJXKF7ejX1fUfgC7q0ZhsQBt\nV5+UtFHbA5SWvuep+AHfehtfeRjH3VwKyDpMXq+BEJGsaaJIs8I3rRuQ0UOG\nn2Qf\r\n=ziHT\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.2_1608058607842_0.6624312341404108"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.3": {
+      "name": "estimo",
+      "version": "2.2.3",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.11",
+        "puppeteer-core": "^5.2.1",
+        "tracium": "^0.2.1",
+        "yargs": "^16.2.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "ava": "^3.15.0",
+        "eslint": "^7.18.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^4.3.8",
+        "lint-staged": "^10.2.11",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "9e76c3d643d26a8a875f8b038d23d68eebb8d757",
+      "_id": "estimo@2.2.3",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.10",
+      "dist": {
+        "integrity": "sha512-x/paClJMxq/tlyR+AOLG824LW24peU4FchHq8s9K8nrwlfuAIBAdtw0Hkr/DCdsVXkGu+fo6WAJsMrGCl8LySg==",
+        "shasum": "a334408dfa023f856041c7bdab36e272949e184e",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.3.tgz",
+        "fileCount": 43,
+        "unpackedSize": 450250,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgDKhjCRA9TVsSAnZWagAAO9UP/3Do0x8QWMgJu8pLOLen\ni/XsYiD42C5sF/8bxiTVN7CSG4ynbPZc9xHPNYF/nWVIGIrNbpciQqagvGe5\nSiJcasLg2oJm4p+fgiQFE/H5bSgZszahH7O6IuDwxWdl1Vbjl8nIr2hQyhOf\ntO6EiAodP8mr3mRr/RBp04PfTsBhI8MuKvFbW+1T+BURFRsBCrEKZBlmmEtR\nTTxVbn9tBhPLM3Kv9XeHUGXZh2QqxOSqfATroEERtcyMRDnAzXqXM/Yt1P2Q\nc1lCv5qKvh7+p0nSq8GkCj6daPwcErz6uer2eEHXXb+AhvhVZlmKfGvmlZh+\nLOc52Kx3Tvqiq2DM9C755uLYO0suquVd+l50nmj8QKQVp+nZEs1eFTT4i2Xt\nbPmpUMt7rcdEYKtVEPfOr35YhNNyxSU3/BKNbcaIQsCP2eWjVYDYmYenvB4j\nM3C6QCgKqNDwaKDAmXpyEP7S2vIkAjmE3rl0+5q7dZrV8nqdWT9mYr6iZVET\nycJ8fVcul1kUa2/CCiTOrd+PeBOaxrLTj4TDfezK+Fa8TvvfsLCyo+4fWVLi\nOszfucGE5zVw7SwOslkOW8liWf0LQx1+hnCCMT+NQx4T9Zu4biGg7FBec4+V\n4bAD9Vhx21RxRW/K9TdV0gH0wEDB7KnvD3kQpRftGApyskizAWcW/HxdvYvR\nUMpv\r\n=LTO9\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.3_1611442274940_0.3890058491944053"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.4": {
+      "name": "estimo",
+      "version": "2.2.4",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.22",
+        "puppeteer-core": "^8.0.0",
+        "tracium": "^0.2.1",
+        "yargs": "^16.2.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "ava": "^3.15.0",
+        "eslint": "^7.24.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "2325028e2847e90795dbfa9680909e99913a52b8",
+      "_id": "estimo@2.2.4",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.10",
+      "dist": {
+        "integrity": "sha512-hAyR/CbDoZHlUCMu1PUUJzmzVk4XUaibjs7KVBr8gwqImaSOEMo+VPEuIk+IcFhaIE8NZk604ceXFlJdC2nZ1A==",
+        "shasum": "4198261257a5cff4088ea43fd9a74c0e6206bb45",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.4.tgz",
+        "fileCount": 43,
+        "unpackedSize": 450523,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgcajgCRA9TVsSAnZWagAAioAQAIV1ZV5ANyfxigtcQskc\nSiAQIDds0/yvZIdp3hnRnGjOqlpAIdoax17pe4FIb1h7qa227PB47ocByrx6\n/LIapG3iIWH0l8LyZVSPr2neOc4lTcuxE3YqQs/JFx0QI5OURxfRL6yaVhZ/\nUH2Tq2kqpzmGwuPKKHaqdbEVrTTw3iiVrb2L9Cew6INO2UkhtzDT34SbN9Jc\nta99UVVosN37qGej34vrhENs5lvP2vxy+ufuwsFahNWw0J3SS60rdfQgw02O\ny71QhzUgDxYhZa2VQqNdq4/JsiM+AJCEoUlsmgX3VSCLYDoI5hIYpg632Sss\ncbzwHJM6UinFz5VzdYAtQT00tqVo13gm8ImGxIvzzKXs0fXTWpp72dM9FtsO\nlEAfRyZqxTuy5i4YEiw9Fr2zUU/796FInf4zbD52r7SSXIKrDYbnU67/F7Pr\nIZaS0u7/zwyLnHMO0S8IdKi+jFEgk9VID3Hz1cQBLxuROm49/zuSC+okC0uu\nuGxMpp+AliP8J1ynA0MUDzAUKapxDuo2Yzxr54jPC7+Fhq+PaLYtu3tjcNgr\nRvs030+ytJtf/LD2kHQPwPRCkzQqgiBr+GN00BWPGDhzqpzQLbktffD5QTxK\nXI+Px41TqwUn+4m/bWGkUvRQiSnqSPZP1GjmvfXLMx7G59TL7RW0u65hJVsS\nYHlJ\r\n=68VZ\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.4_1618061536083_0.6413321086703385"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.5": {
+      "name": "estimo",
+      "version": "2.2.5",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.22",
+        "puppeteer-core": "^8.0.0",
+        "tracium": "^0.2.1",
+        "yargs": "^16.2.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "ava": "^3.15.0",
+        "eslint": "^7.24.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "912375e9c6a28abecf8fab2c072dad82747be8b6",
+      "_id": "estimo@2.2.5",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.10",
+      "dist": {
+        "integrity": "sha512-PQCmJWim0sXcJN2hwjflIk1zFzGgNpAKYG/OcNQ5G0bI6sD9UvgIQiQp0Zl81cDyDS1QHsXIpCWGYrSft0z+Ag==",
+        "shasum": "fa2c1340d8c5334a9f10bc11cf305018bfefcd0f",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.5.tgz",
+        "fileCount": 43,
+        "unpackedSize": 451219,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgdHe0CRA9TVsSAnZWagAAyQ0P/RDX/0cIWaqvVnkEiNs/\nhYUHeR/GzYMHlqiooO2gr+8MLqYJTZQeHAHwiGFaSP4qmSsFgYBpGDOhoBZw\nfON3RpTus8iG4+yp/z7I5W4kuXlJKGxoYKakse4bvsq/STMvXn0chYm6dYn8\n6O4etyeTPH82ujXq/Be7XJcTKprQrZG34nBdcUrwGEnDzeI0jIkg0LiyzXQF\nN8xDuscUJ2rREJVckCmTQGdwlxwpuevR8ryZUhBE5O6WOFIcDUbDN9OkIawE\nKOpBMDnjFrNoLF8J+Z6SM1ssM6XKfzOYPYyqGNlllNIWjyeJrNbmUpg3lgu8\n9BC9oLJQeAsyNDDRkGt2MU+qNCHpLcSIvUJy05N1xzIZlwuZH50NR7d/nUyv\nWV1q0dBTCHKWy0ODDwILgHzWWm/2XhVz/DGdZEBLT9Y7oa+oRPwQgc100hIh\nqC1+WBnD9ILCUY/9X33S6TCogTIzpq3/EA4PNvXFCgvUuNrresMTvCDkJt0C\nxIaTbrhwVZgctNWyd1x7Stec1SyX6mgIfysCeU3VJK9fkR6wiTpONokVZevj\nhguNflfccRreeHLBWnP5yHYMVBbbXmRCF8r+qYNnuFODLttbR81OHSSL/Vqk\nsaedvoDiTZU2ErJR6XhTbhZJQIzLLpVxj9YcSreAaKswfbEt0NA1Lrr7OOkv\nBc6h\r\n=nSj3\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.5_1618245556291_0.11461270464473294"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.6": {
+      "name": "estimo",
+      "version": "2.2.6",
+      "description": "Evaluates how long the browser will execute your javascript code.",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "nanoid": "^3.1.22",
+        "puppeteer-core": "^9.1.0",
+        "tracium": "^0.2.1",
+        "yargs": "^17.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "ava": "^3.15.0",
+        "eslint": "^7.25.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "a1ddfa20acba1b031aeaaeffcbac52492dc4a677",
+      "_id": "estimo@2.2.6",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.10",
+      "dist": {
+        "integrity": "sha512-X/tVvxEiDP2WmpuSU+7v2CPRXktYqebm90PT4RDJjKjI7i9Pt6lcvuSXatBerQ8X5kU8z1+ZXWvsVWmw6q1ZUA==",
+        "shasum": "d55355dd495a747780f831de47ab7f8388a43e6f",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.6.tgz",
+        "fileCount": 43,
+        "unpackedSize": 451047,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgkEjcCRA9TVsSAnZWagAAVZoP/RM0Ry0bBpY57tTpXw8u\n9akVZdfSysCM4YqWVw9TgAJPmpGk84810jKJeEi/356Cj2yJPFKlrlyCDFd8\nxisOuWNqu5yc11hQGn7lJXbyKLFuZEKTiJAKVqX2Yu+EcSD+xvjs5JzTz7zz\nDii9YOUcrkfR+lgrH7k7pMVuUDwVZFVbdF2n4e/rPfPrkgZo3L4IjDi4oUfy\nvImMCurcDqtpM/svPdltjWcOftTpnMrmMtHZwvMgc7Nfqe2YUtJXNNZa1Sg+\nGGkY18aPeU+JxdjI/r2YPxyy/6lfSu4pGGGFsIOuUnmyIMFfqe031J4Lcz/U\nH1Ovn4KvnFBKMfysRhawZg7sLPTeiK8pA+4fODLAEMuw0t5EdjqLdrjGhz6q\nRFdNATJrqKjE47l+899O7XPHE5YFw5rsTXvUyrrQCW7b1WBNaSsmK+Y3yteW\n9/S5AIVp5GDKCICgBmEbS3yRiuPmDIbnUiDK6TlnGaVD8KxxBmp16ONBOv2/\npqDlwjUOQ0lxr8kUZovr+Ft8vETPHLW+Tv5caVoqRz+c67UGrwg57XrY25cm\nrTMOqnBHfy0oIRqhJlvPm8UlpI7Kr27Hmw/GFZGhZYzV72OU1E6NdSPisgvo\n+hVfLOPsYUCjh9XxvRZx2ZC+peARCbEKxPkxjLGsEbci4Kl/nDwgKKpUtPxl\ncW/I\r\n=EPeK\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.6_1620068571541_0.49859861895854674"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.7": {
+      "name": "estimo",
+      "version": "2.2.7",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "nanoid": "^3.1.22",
+        "puppeteer-core": "^9.1.0",
+        "yargs": "^17.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "ava": "^3.15.0",
+        "eslint": "^7.25.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.22.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "a0490edfb89259c57e9e06051e9f7cd9f00534ed",
+      "_id": "estimo@2.2.7",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.10",
+      "dist": {
+        "integrity": "sha512-hY5X3DwK4Pftmc2yvkKXiRk32gr8vbc0OMfztQjsA9UYX29aovnpuIoL/g0MlcNXe8EOKGLrKIl1t0cItoblhA==",
+        "shasum": "bbfd97ad208b831d83ac5402c26e32b0e23939ed",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.7.tgz",
+        "fileCount": 43,
+        "unpackedSize": 451163,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgkFxhCRA9TVsSAnZWagAAQXwP/2T8NjURyejifDJSCpL7\nVVHi2ynNZ/E3nAhThkqlEFWTYa78QO3qVYXUqRWI29ihQq3nflp1GFkbq/xb\nhBwcC0cn7iCU0wrLR2LwTXWg5aZTEz0b6WAQ2Y9Bpx+XBHYFaHWJ9pfjjWDD\nv9xtg0NO77uT5jOKEOyDl7FKiU6poDk3IAcTy6JV7iT29rwg0kTupFfdiEv/\nmErdD4JG0qNMb7HH8A07gHWq+yCn4Ry5OU8abKP4co7XuuruMdvm1/aD06EH\n7l14NWADAOm+NS3bXecXu06xxQ5E2qV7281BN9F+N6dvXJlPIqDy0GSRho8t\np6aeVvNZIZ0sPZvqgBkEdwZV3NLz16zjWrFWBXZE++iWxMNzvIom41IgTL0Y\nIlG3MQn+xzILTn3cV5OCqd38eRTH8wa3fRkXwSr7FqGLBFap3jR4YeLkUfqH\nNDLkArM9oEoU1NVdQ2xrwYWl83NfYItb0OLtLmXx8EMJ4mFhORmQB386lkEj\nwNuv6LurVww4Od3VnjYO/MRk0zmjga8g6HgIY6whAqzyizh/JcGSCwq6nECE\nB7+QiVajHNpqQerY4D45fUyOuKo3JMUR6BABUusKmY3haz7/33ePPWnMuJ/2\nUHS/SaZj1MYCPmU0Nq4ONAFgR1vOf4JJClo6lLe6GSnnQP6BHB+Q3keNsCK+\n4yqa\r\n=A33D\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.7_1620073569120_0.33548717967232156"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.8": {
+      "name": "estimo",
+      "version": "2.2.8",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "nanoid": "^3.1.23",
+        "puppeteer-core": "^10.0.0",
+        "yargs": "^17.0.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "ava": "^3.15.0",
+        "eslint": "^7.28.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.1",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "5ef769240e151cf5048ad1d360f3db27c6e43878",
+      "_id": "estimo@2.2.8",
+      "_nodeVersion": "14.15.4",
+      "_npmVersion": "6.14.13",
+      "dist": {
+        "integrity": "sha512-7sQte1r5KtILz1BNl8b2Npf9K9HYE4vWfnj+9DDyUYsdKj9z+6bYXIahrqdTPBfhaUZ4Akd7EUqQxFnu5SCPkQ==",
+        "shasum": "5eb3ab381cffe46086f68dfcca3550c7f656e5a2",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.8.tgz",
+        "fileCount": 43,
+        "unpackedSize": 451399,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgyFBRCRA9TVsSAnZWagAAUakP/i3Jc3kXRWRJ0dZuWC4t\noeX/ZJAWWC4REikF+xGAOx2ipdTiaAmoP2q4Yyp5SYuHmT/AhWPKcrSkeeSA\np3TL9uQ4vQjmBY6rQQ+OYMbHxHtCWIZWfae7jbU5CpTCc+EhSruGgxPKGwEB\n5fWWDbtMuMc8hQIl0UlRSWs715tVDU8ZLL6ZtGf0VIHZFn+MhX/lBdKiY2qe\nlKKTVFUX6exdxREI3rrmmSQUjLa4+39YRSac5hjOWA/g5kiAxn+uiqReYEpX\npzQNiP8M/Jvhe251OWDBq1eFT3Z8rz54MY5yFW8ROjENG0od0s2URcJW39dr\nVjI68U83dXoETUSyNy/dj3yXzFL3yzdmX6ekFHjfu/WT+uvCuFttuFDt2F0q\n06xP4W2OjFNEr1+BYPXPBtw7SLXixIS+Dr6FawG/nuTULB22eaHZCYzEH/12\nzbs414VAnGVG2xvTZiK9+IpmkDPmXAbjUNHqEX6chpI9GRBXfEa1khOdoiI1\nswCX1QuJNpOQPRlViYobdNCdMRkpu3lnH7g0ln3N5ed7YBSLV8elC7UIjMwM\nAJvYeOB9QHJYp7og1ujMBzKS3ThiLpIsaXLux4NpCasjtGc4eWgSbuT+tBbs\nxlCUfFpht6HCKOG35tm1twZX1t1ZFhV3ZXvS3VE5AdJjXd6RI/jZVAcGMJeA\nxUDo\r\n=MJAp\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.8_1623740497679_0.6635573907242855"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.2.9": {
+      "name": "estimo",
+      "version": "2.2.9",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "nanoid": "^3.1.29",
+        "puppeteer-core": "^10.4.0",
+        "yargs": "^17.2.1"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^13.2.0",
+        "@commitlint/config-conventional": "^13.2.0",
+        "ava": "^3.15.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.24.2",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.2.0",
+        "prettier": "^2.4.1",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance",
+        "js"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "6e4cd781500bc1f89d928eb25e334d382a20a909",
+      "_id": "estimo@2.2.9",
+      "_nodeVersion": "12.22.1",
+      "_npmVersion": "6.14.12",
+      "dist": {
+        "integrity": "sha512-X4026viC9gyZyXSROVBMHGlrBXIs3Al0kC2yMB+URqA/TsW29Q9kyQvGAO55rLnAxJarAqGN0RXzfUmxmLtXgg==",
+        "shasum": "09df1516adf63abc83913e0f06e14b7b792f0d6b",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.2.9.tgz",
+        "fileCount": 43,
+        "unpackedSize": 452812
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.2.9_1633639881219_0.5380686507053491"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.3.0": {
+      "name": "estimo",
+      "version": "2.3.0",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "scripts": {
+        "install": "node ./scripts/findChrome.js",
+        "prettier": "prettier --write -l '(src|tests)/**/*.js'",
+        "eslint": "eslint --cache src",
+        "test": "ava --timeout=4m --exit",
+        "clean:temp": "rimraf ./temp/*.{html,json}",
+        "clean:chrome-config": "node ./scripts/cleanChromeConfig.js",
+        "docker:build": "docker build -t estimo .",
+        "test:docker": "docker run --rm --init -v $(pwd)/temp:/app/temp estimo",
+        "test:launch": "ESTIMO_DEBUG=true node ./tests/__mock__/test-launch.js"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "commander": "^8.3.0",
+        "nanoid": "^3.1.30",
+        "puppeteer-core": "^11.0.0"
+      },
+      "devDependencies": {
+        "@commitlint/cli": "^14.1.0",
+        "@commitlint/config-conventional": "^14.1.0",
+        "ava": "^3.15.0",
+        "eslint": "^8.2.0",
+        "eslint-config-airbnb": "^19.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.0.2",
+        "prettier": "^2.4.1",
+        "rimraf": "^3.0.2"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "preferGlobal": true,
+      "husky": {
+        "hooks": {
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "*.(json)": [
+          "yarn clean:chrome-config",
+          "git add"
+        ],
+        "*.(js)": [
+          "yarn prettier",
+          "yarn eslint",
+          "git add"
+        ]
+      },
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance"
+      ],
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "license": "MIT",
+      "gitHead": "7ca2d94cc5120cfcf07098a2d490cfcf5915707a",
+      "_id": "estimo@2.3.0",
+      "_nodeVersion": "14.17.3",
+      "_npmVersion": "6.14.13",
+      "dist": {
+        "integrity": "sha512-KlGk2zkLLyIyoD+BV1cdpzwjIQ6n7XmqCtwSZJDKIjLD7jcwNPdZ5ZM/Z/GsCFQQAJvxF9Ijpc9cApn8NQFcAQ==",
+        "shasum": "c945123db5ed2af5a0ebfba0ae464a86a97a9a87",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.3.0.tgz",
+        "fileCount": 41,
+        "unpackedSize": 448865,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhlBbQCRA9TVsSAnZWagAAvI8P/jppBH4iQ2SYEdAjglE6\nqHlp56ugvx+eIt/NU7YMuQvLLa9rJWO6hwHwoQafRxbBiu/MNTLFa+h2diOW\n0k5WLrzKaOqZW57JXbRbU9Q4lzthJLMAKiswqrufXWWvXznEIhUos5KDLgGP\ng2ibwTXRoSrJKWsHZagsKTPPpSYPwXgMYt1yc1i7gozNjfr86ELh9mpGNvsK\nLtzXlrjv9GAfOHoTWvSX2vL37aQzO/V6EXC3HPRd/eIW0i/fffuVB4d62jW6\nK4E2Jw/GX6Y25M6qq3moFinuumalj+uWolkxNXb3PKwrxZv2QCNHNIN53Af5\n/RKk/wGjRlAtAtTJvP8wxrAkozRXbouudvICE3nILIPx0Xvqd2kVCLeAPvQV\n27cEWwO35C0Zq8LZdDY6SxcSfnmtJfACstGBbbBwdquWqHLXa7WenOmCNVhO\ngun51rCz1/2c1h2wr8jLO8QC9Qnh5XZ1fGrzqrRxvww7klecq/31M2VhaOKe\nL5nVV/JIL6wqPUrX3dIqsvcn5Ugommjl64Wbo1068xj1l5MASUgsxG0SJZcF\nSsSN3aZN+CxNUPQTd/GTKZewvnTTM8AjBDYUJkwP2/LrDNfjkxi9fugaMbJZ\n+gJ3lMkBRGKqAIOzcMTOjSk9DIuOWdjwm5nTVZswmpAYO5DLaM08qmbCEiHa\nyAx6\r\n=nHLY\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.3.0_1637095120021_0.7158415212752991"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.3.1": {
+      "name": "estimo",
+      "version": "2.3.1",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "types": "./index.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "license": "MIT",
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "scripts": {
+        "install": "node ./scripts/find-chrome-binary.js",
+        "unit": "ava --timeout=4m --exit",
+        "test": "eslint . && check-dts && yarn unit",
+        "clean": "rimraf ./temp/*.{html,json} && node ./scripts/clean-chrome-config.js"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "commander": "^8.3.0",
+        "find-chrome-bin": "^0.1.0",
+        "nanoid": "^3.1.30",
+        "puppeteer-core": "^12.0.1"
+      },
+      "devDependencies": {
+        "@logux/eslint-config": "^46.1.0",
+        "ava": "^3.15.0",
+        "check-dts": "^0.6.5",
+        "eslint": "^8.4.1",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prefer-let": "^3.0.1",
+        "eslint-plugin-promise": "^5.2.0",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.2"
+      },
+      "eslintConfig": {
+        "extends": "@logux/eslint-config",
+        "rules": {
+          "no-console": "off"
+        }
+      },
+      "eslintIgnore": [
+        "tests/__mock__/*.js",
+        "README.md"
+      ],
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "prettier": {
+        "arrowParens": "avoid",
+        "quoteProps": "as-needed",
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "preferGlobal": true,
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance"
+      ],
+      "gitHead": "c3301c3069538fc3a9f10a70aa6d543461acfc61",
+      "_id": "estimo@2.3.1",
+      "_nodeVersion": "14.17.3",
+      "_npmVersion": "6.14.13",
+      "dist": {
+        "integrity": "sha512-IqQwkl4qQzajWPKa42K3t/l/wTe4jJdickc1i/fHYmX1SD7NexurWRkn15NwpOEkturUrqNiRHRCG+nBvxd/VA==",
+        "shasum": "0adf3bebf7149d869921445febd3012588b9b899",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.3.1.tgz",
+        "fileCount": 35,
+        "unpackedSize": 438748,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhsouPCRA9TVsSAnZWagAALAEP/26Yy5Ihgi3ww3F13EMq\nohGpU6udgv8m+yS5QnxNDP8C/Ll155aJ8vzuekVwdu4vPenUeXJCwK6XbPGJ\n4+vE8nzfcPN8bVqJ0D4IV98DJeQtfm+TwPYplE9AV92tL5qzflURYYPXpUFj\nC7Z16fhaBxThGY8EJ+gfBcA3QfiYXxo++LK3j+TWiD2eXCaphScQK1ASj2f6\nLltWf+CU9l/Vk2U670oaG/mf33vbbMJe9OwCszVhMKfEfIriVNi3LeXhiRuA\nbVXrly6wOqpe2s+T8CeUaKCEgo4YYkw/0AWG8ZzZhNBJG72JtbRYqlm9+lnA\nTEZ2YIDpKOW4QSXCqzek9fO/LEAY44++KFLrQ1Vr2ASXEI6YaPSCZylMOsQm\n9MFuOS9anO1r+DelOKPLhvqGIiM+Bli07G4Bm8bsYFHmWShoLIAW+/IJG+mH\nZlwsTGLm0ruol2xdW7MVLRR3uOSw/4hD+YvGG5qK/gpOK+GCp8KYElt3F1oB\nALUxV+PZhDFsLBGwbFOQYKY1PUpvlg0JT/qB090N7ZXte/0hA5iXa061JApt\np9mkGswiVaQTgU3QpHt6hXAUsZDf+Lm547I3msWv6BranCj0xqLb66PJh+bc\nlPzDEP0iwJsJqD6tb2rrbQ8SSiGQ5VA/0SwpvdBcLZDMBLeKFLB2//gvmvL8\nrES5\r\n=lCoR\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.3.1_1639091087374_0.23601497289033557"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.3.2": {
+      "name": "estimo",
+      "version": "2.3.2",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "types": "./index.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "license": "MIT",
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "scripts": {
+        "install": "node ./scripts/find-chrome-binary.js",
+        "unit": "ava --timeout=4m --exit",
+        "test": "eslint . && check-dts && yarn unit",
+        "clean": "rimraf ./temp/*.{html,json} && node ./scripts/clean-chrome-config.js"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "commander": "^8.3.0",
+        "find-chrome-bin": "^0.1.0",
+        "nanoid": "^3.2.0",
+        "puppeteer-core": "^13.1.1"
+      },
+      "devDependencies": {
+        "@logux/eslint-config": "^46.1.1",
+        "ava": "^3.15.0",
+        "check-dts": "^0.6.6",
+        "eslint": "^8.7.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prefer-let": "^3.0.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.5"
+      },
+      "eslintConfig": {
+        "extends": "@logux/eslint-config",
+        "rules": {
+          "no-console": "off"
+        }
+      },
+      "eslintIgnore": [
+        "tests/__mock__/*.js",
+        "README.md"
+      ],
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "prettier": {
+        "arrowParens": "avoid",
+        "quoteProps": "as-needed",
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "preferGlobal": true,
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance"
+      ],
+      "gitHead": "1a5e2c64ccb0fcb2c4ef940e0ee9a77fafab97ab",
+      "_id": "estimo@2.3.2",
+      "_nodeVersion": "14.17.3",
+      "_npmVersion": "6.14.13",
+      "dist": {
+        "integrity": "sha512-k3EN4z4ZnSUaz6eZAFIHl8pcdc2S0lK3+C0WNINg/e2nkgKAykOOGpa2TXRz/g8bWo6E1XuF12TuhnN9/lfbFQ==",
+        "shasum": "abb207dedac8b4ee4f857029807b79272e432282",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.3.2.tgz",
+        "fileCount": 35,
+        "unpackedSize": 438821,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh7IGXCRA9TVsSAnZWagAAvGoQAKQybz+gTjOjdmFUQwK3\n0oKEozRFCto2rHp7oj0UO3a4rHlfX49yX3mdDHfgYzRzjfKIxb+LIqNjXsXX\na5KLM25a4x5vQScyPvKYwWcpVWgOnoSxGStSfs9I6SxdFxdJkgEicSMue/IS\ng1KUFAerkmkkpWANsD3eWMwGYhCkZfDHQGWMo17myaz9reAD3PhMT6TLC18n\nhicpWP8h+KfbCsBDqJ4zEPUo3TiCUtX6z3GH0kJ7kqI3MYpmB+t/TklsPnvq\nNT4RE4E2/8UWJXUvQgkZTo3D1M9NzuU9dpICX31EhRfm5N6o4hwmf6Cw1lzh\n99BLLOb5j1PvnzOMy6ekr7jMqh41R2caSRoKZOLNpuk5aWDOiGJtJSpzYCro\nGXYYsJCLD1rOH6Ww5Br+lK3uQ1zkQXDDQlVTQ6E2cdl3w8gcmzVS/tOtfa2B\neAQLiUaj7xcQOvRzbnBnAlZtrvlfJ8oOt9kLRCkf74Se2UN1VERcPrKsjeOa\nx3neR77lLe9wWsYwokU84+5fGVKrLu7xurHuHwyCA9Pi/4AvoOdVXqv1tgSq\nOCRdmIR5zzxKhw0DbqqlVMIkWUVzMhf6GlDjMYDs/enEmegTA/WybSPbMhr5\nJhJZPemL0G9k/UExeaEClEJ3+xT0ElQKmC+FNuC5X8Hj9WAO0wmIVBOe/CmZ\nLzOX\r\n=yw7Z\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.3.2_1642889623158_0.285541622797725"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.3.3": {
+      "name": "estimo",
+      "version": "2.3.3",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "types": "./index.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "license": "MIT",
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "scripts": {
+        "install": "node ./scripts/find-chrome-binary.js",
+        "unit": "ava --timeout=4m --exit",
+        "test": "eslint . && check-dts && yarn unit",
+        "clean": "rimraf ./temp/*.{html,json} && node ./scripts/clean-chrome-config.js"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "commander": "^9.0.0",
+        "find-chrome-bin": "~0.1.0",
+        "nanoid": "^3.2.0",
+        "puppeteer-core": "^13.1.3"
+      },
+      "devDependencies": {
+        "@logux/eslint-config": "^46.1.1",
+        "ava": "3.x.x",
+        "check-dts": "^0.6.6",
+        "eslint": "^8.8.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prefer-let": "^3.0.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.5"
+      },
+      "eslintConfig": {
+        "extends": "@logux/eslint-config",
+        "rules": {
+          "no-console": "off"
+        }
+      },
+      "eslintIgnore": [
+        "tests/__mock__/*.js",
+        "README.md"
+      ],
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "prettier": {
+        "arrowParens": "avoid",
+        "quoteProps": "as-needed",
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "preferGlobal": true,
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance"
+      ],
+      "gitHead": "3678bc6e3787de7a3af96304a61fffa99abac356",
+      "_id": "estimo@2.3.3",
+      "_nodeVersion": "16.13.2",
+      "_npmVersion": "8.1.2",
+      "dist": {
+        "integrity": "sha512-gl538IDBGtrT+ad9oLIPCdA4YeMJwyqDKFoqo8aHcls81RiX89OXmnEDV3dSMM/CLttuFm5Tl61ZJL0ERIEn/A==",
+        "shasum": "a8c58d350012822033810db0c130b625c492e63c",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.3.3.tgz",
+        "fileCount": 35,
+        "unpackedSize": 438893,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh+ApqCRA9TVsSAnZWagAAwisQAKSv2DTx6U/gk77EIiVU\ntZGQBuEF7NBZAIhamQfZBJfoyybz/1pnUAOlKfyzRTxl20fo+M5ipKvC6UB5\nO8YNSThdhe65fCOradbTzn9QEXttbcCFNIiFPYp3QXp6bKUzyv+N8F3dfxoS\nJ6iY7jUmhuIfuaQ7tY72/Z9xCfGTyz9gm6G04MK6vQO0Mb1vADbwld7Ismmw\nnPzBkhv7O/2bo9tb21ten/y9wclUrwO2kqMMknkwXZCOYeB2AL2gJP8w55hO\nmfz4HsfLbHnJGBjloNWSTCVyEgBu6ThLENn0d1N///sLoWf5KLVlH2BAoTtU\n9c9qabM4IYATJ7pEfaF8BuCuURDaCSPmRAB9+krFkZb+3isyXQh6mwACgXxn\nwWMr/blfy0oemvfWnB8T7kjVjQccIBNxgHjqsiEVx1Txi1OtluctwCa2ZJ4v\nSIHRICTtZQqx1yeFma0y1F3H6oTXDCIDdjNXso3vtA7o7zqbGIyXq/SoG+l6\nqm1OV3TSJsGLtGpFqBKccyPIXGdZn0sjZ89sxvE6nqzwZaDzpHs+MEYqNnfo\nEtr9dgbJXyff/bnTfidpzKHRQPyCt3EZV3tSKR1CtxEyansYgEznZ62DSK7h\nFJYumvpXQ02B2/6jcakWB0mDiq9fpyiiuX1dNgPX9UhgtEDk5nXoYkNXXoOY\nmX5k\r\n=LcLZ\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.3.3_1643645546684_0.16037295956523323"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.3.4": {
+      "name": "estimo",
+      "version": "2.3.4",
+      "description": "Evaluates how long the browser will execute your javascript code",
+      "main": "index.js",
+      "types": "./index.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "license": "MIT",
+      "author": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "scripts": {
+        "unit": "ava --timeout=4m --exit",
+        "test": "eslint . && check-dts && yarn unit",
+        "clean": "rimraf ./temp/*.{html,json} && node ./scripts/clean-chrome-config.js"
+      },
+      "bin": {
+        "estimo": "scripts/cli.js"
+      },
+      "dependencies": {
+        "@sitespeed.io/tracium": "^0.3.3",
+        "commander": "^9.0.0",
+        "find-chrome-bin": "0.1.0",
+        "nanoid": "^3.3.1",
+        "puppeteer-core": "^13.4.0"
+      },
+      "devDependencies": {
+        "@logux/eslint-config": "^46.1.1",
+        "ava": "3.x.x",
+        "check-dts": "^0.6.6",
+        "eslint": "^8.10.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prefer-let": "^3.0.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.5"
+      },
+      "eslintConfig": {
+        "extends": "@logux/eslint-config",
+        "rules": {
+          "no-console": "off"
+        }
+      },
+      "eslintIgnore": [
+        "tests/__mock__/*.js",
+        "README.md"
+      ],
+      "ava": {
+        "concurrency": 1,
+        "files": [
+          "tests/**/*.js",
+          "!tests/__mock__/**"
+        ]
+      },
+      "prettier": {
+        "arrowParens": "avoid",
+        "quoteProps": "as-needed",
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbalabash/estimo.git"
+      },
+      "homepage": "https://github.com/mbalabash/estimo#readme",
+      "bugs": {
+        "url": "https://github.com/mbalabash/estimo/issues"
+      },
+      "preferGlobal": true,
+      "keywords": [
+        "chrome",
+        "tracium",
+        "puppeteer",
+        "devtools",
+        "size-limit",
+        "performance"
+      ],
+      "gitHead": "135d9f31fc664d8f7e34f7b7accb23d963b55909",
+      "_id": "estimo@2.3.4",
+      "_nodeVersion": "16.13.2",
+      "_npmVersion": "8.1.2",
+      "dist": {
+        "integrity": "sha512-jPjaCeuPoAkKhPf8Tg7ITanQd0deMuZz6hvdhaq/pQkqFK2iYrYggMNvCrbGTPY1N6fdMmtvKVDAoEsjOz781Q==",
+        "shasum": "8bd797890614cbc71b579b54103b91ccc197d2ad",
+        "tarball": "https://registry.npmjs.org/estimo/-/estimo-2.3.4.tgz",
+        "fileCount": 33,
+        "unpackedSize": 439230,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiG7gxACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpLTBAAlwDNKi6jbLu+E0HzQJiSNQDAx7R/rpBURw1h5ZqjDdQzP0N0\r\nMb0HUVoZnfCAP7GdSrK6XNEW2ydhuhdeNgdh4JFrEzHQa+29gsurMd+b5EQh\r\npacXSaYJkQ3N4flSGRTgTmu/CRXwutLT+FQLAxmHzJz+Xf6eLLx+lLxn83rB\r\nmKfzpfwurPxTb7ZVHgYi2CkS5V/eDVM0CSAHekybPUgsr8jDVxRuEPjgS6CC\r\na4MIXYKfb6H/FXD4mDttFh+xS1CGhod1xKFWT44CI/KvGeLXvx/I6BtINxom\r\n6HEjEcuqqzhrbcUlJWdL0rv/Yr95WkKKdYFF3OF4QcAIDbzKd3nsWSwSi87j\r\nj2RfNyFe/TG3MAjq6SAtzRBpz7EyDtS58KDB9d9qYVVXkm42ZjB0uIjuHY7L\r\njBHZj3rQ02YfFP1rHyHnU+Dd0QA5l79YmUfKm8SvbWfVrz4LU4tAJYL4U8xc\r\n2Itet6t9G7cQLKDKMZFdd93REcBkVAHyR6RTodZ6PAlG1/pE0FpPG8kJRYwM\r\nxqOMpqfjYKRV2xS7SqoCqczMZXav0T1RkOLe5hqKjnIbyHZUKWybF8sS6/0I\r\nfjAPPNInPPbsnuukrKYVMrEpfJzJxVtgpfNhqwAP1EUIOrYhY6a2CLf0q1iV\r\n/G+hUsvDpAoodMsbWzAqUGgzdc2o3T3ZePM=\r\n=A7cG\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "mbalabash",
+        "email": "maksim.balabash@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "mbalabash",
+          "email": "maksim.balabash@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/estimo_2.3.4_1645983792855_0.6269850132455941"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "time": {
+    "created": "2019-04-15T18:34:14.187Z",
+    "0.1.3": "2019-04-15T18:34:14.320Z",
+    "modified": "2022-02-27T17:43:13.069Z",
+    "0.1.4": "2019-04-15T21:54:18.781Z",
+    "0.1.5": "2019-04-17T14:40:55.629Z",
+    "0.1.6": "2019-04-17T14:41:53.007Z",
+    "0.1.7": "2019-04-17T22:12:01.052Z",
+    "0.1.8": "2019-04-19T14:24:52.437Z",
+    "0.1.9": "2019-04-20T21:23:29.349Z",
+    "1.0.0": "2019-06-19T22:24:06.727Z",
+    "1.1.0": "2019-07-25T05:58:14.495Z",
+    "1.1.1": "2019-07-25T06:08:46.309Z",
+    "1.1.2": "2019-07-26T07:55:08.556Z",
+    "1.1.3": "2019-07-26T20:56:41.647Z",
+    "1.1.4": "2019-08-01T07:13:50.052Z",
+    "1.1.5": "2019-08-06T19:29:56.181Z",
+    "1.1.6": "2019-08-27T19:58:15.039Z",
+    "2.0.0": "2019-09-05T06:44:56.482Z",
+    "2.0.1": "2019-11-08T08:51:44.908Z",
+    "2.0.2": "2020-02-21T19:46:52.902Z",
+    "2.0.3": "2020-03-14T14:33:32.436Z",
+    "2.0.4": "2020-03-17T21:35:53.824Z",
+    "2.1.0": "2020-07-13T15:47:29.437Z",
+    "2.1.1": "2020-07-13T16:25:51.231Z",
+    "2.1.2": "2020-07-20T15:50:39.796Z",
+    "2.2.0": "2020-07-29T15:24:13.496Z",
+    "2.2.1": "2020-09-04T06:54:07.072Z",
+    "2.2.2": "2020-12-15T18:56:48.028Z",
+    "2.2.3": "2021-01-23T22:51:15.071Z",
+    "2.2.4": "2021-04-10T13:32:16.216Z",
+    "2.2.5": "2021-04-12T16:39:16.445Z",
+    "2.2.6": "2021-05-03T19:02:51.718Z",
+    "2.2.7": "2021-05-03T20:26:09.250Z",
+    "2.2.8": "2021-06-15T07:01:37.818Z",
+    "2.2.9": "2021-10-07T20:51:21.405Z",
+    "2.3.0": "2021-11-16T20:38:40.175Z",
+    "2.3.1": "2021-12-09T23:04:47.587Z",
+    "2.3.2": "2022-01-22T22:13:43.307Z",
+    "2.3.3": "2022-01-31T16:12:26.848Z",
+    "2.3.4": "2022-02-27T17:43:13.025Z"
+  },
+  "maintainers": [
+    {
+      "name": "mbalabash",
+      "email": "maksim.balabash@gmail.com"
+    }
+  ],
+  "description": "Evaluates how long the browser will execute your javascript code",
+  "homepage": "https://github.com/mbalabash/estimo#readme",
+  "keywords": [
+    "chrome",
+    "tracium",
+    "puppeteer",
+    "devtools",
+    "size-limit",
+    "performance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbalabash/estimo.git"
+  },
+  "author": {
+    "name": "mbalabash",
+    "email": "maksim.balabash@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mbalabash/estimo/issues"
+  },
+  "license": "MIT",
+  "readme": "## Estimo\n\nEstimo is a tool for measuring parse / compile / execution time of javascript.\n\nThis tool can emulate CPU throttling, Network conditions, use Chrome Device emulation and more for measuring javascript performance.\n\n_Inspired by [Size Limit](https://github.com/ai/size-limit). Thanks [@ai](https://github.com/ai/) and [@aslushnikov](https://github.com/aslushnikov) for support._\n\n## Why?\n\n**JavaScript** is the **most expensive part** of our frontend.\n\n![3.5 seconds to process 170 KB of JS and 0.1 second for 170 KB of JPEG. @Addy Osmani](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/javascript-startup-optimization/images/1_PRVzNizF9jQ_QADF5lQHpA.png)\n\n**3.5 seconds** to process 170 KB of JS and **0.1 second** for 170 KB of JPEG.\n\n## Usage\n\n**JS API**\n\n```js\nconst path = require('path')\nconst estimo = require('estimo')\n\n;(async () => {\n  const report = await estimo(path.join(__dirname, 'examples', 'example.js'))\n  console.log(report)\n})()\n```\n\n**CLI**\n\n```sh\nestimo -r ./examples/example.js\n```\n\n**Output**\n\n```js\n[\n  {\n    name: 'example.js',\n    parseHTML: 1.01,\n    styleLayout: 34.08,\n    paintCompositeRender: 1.4,\n    scriptParseCompile: 1.04,\n    scriptEvaluation: 8.11,\n    javaScript: 9.15,\n    garbageCollection: 0,\n    other: 8.2,\n    total: 53.84,\n  },\n]\n```\n\n## Fields Description\n\n- **name** - Resource name (file name or web url).\n\n- **parseHTML** - Time which was spent for `ParseHTML`, `ParseAuthorStyleSheet` events.\n\n- **styleLayout** - Time which was spent for `ScheduleStyleRecalculation`, `UpdateLayoutTree`, `InvalidateLayout`, `Layout` events.\n\n- **paintCompositeRender** - Time which was spent for `Animation`, `HitTest`, `PaintSetup`, `Paint`, `PaintImage`, `RasterTask`, `ScrollLayer`, `UpdateLayer`, `UpdateLayerTree`, `CompositeLayers` events.\n\n- **scriptParseCompile** - Time which was spent for `v8.compile`, `v8.compileModule`, `v8.parseOnBackground` events.\n\n- **scriptEvaluation** - Time which was spent for `EventDispatch`, `EvaluateScript`, `v8.evaluateModule`, `FunctionCall`, `TimerFire`, `FireIdleCallback`, `FireAnimationFrame`, `RunMicrotasks`, `V8.Execute` events.\n\n- **javaScript** - Time which was spent for both event groups (**scriptParseCompile** and **scriptEvaluation**).\n\n- **garbageCollection** - Time which was spent for `MinorGC`, `MajorGC`, `BlinkGC.AtomicPhase`, `ThreadState::performIdleLazySweep`, `ThreadState::completeSweep`, `BlinkGCMarking` events.\n\n- **other** - Time which was spent for `MessageLoop::RunTask`, `TaskQueueManager::ProcessTaskFromWorkQueue`, `ThreadControllerImpl::DoWork` events.\n\n- **total** - Total time.\n\n## Time\n\n**All metrics are in milliseconds**.\n\nWe measure system-cpu time. The number of seconds that the process has spent on the CPU.\n\nWe not including time spent waiting for its turn on the CPU.\n\n## Multiple Runs\n\nAll results measured in time. It means that results could be unstable depends on available on your device resources.\n\nYou can use `runs` option to run estimo N times and get median value as a result.\n\n**JS API**\n\n```js\nconst report = await estimo(['/path/to/examples/example.js'], { runs: 10 })\n```\n\n**CLI**\n\n```sh\nestimo -r /path/to/examples/example.js -runs 10\n```\n\n## Diff Mode\n\nYou can compare metrics of an origin file with others its versions to understand consequences on performance.\n\nWe take the first file as a baseline. All rest files will be compared with the baseline.\n\n**JS API**\n\n```js\nconst report = await estimo(['lib-1.0.5.js', 'lib-1.1.0.js'], { diff: true })\n```\n\n**CLI**\n\n```sh\nestimo -r lib-1.0.5.js lib-1.1.0.js -diff\n```\n\n**Output**\n\n```js\n[\n  {\n    name: 'lib-1.0.5.js',\n    parseHTML: 1.48,\n    styleLayout: 44.61,\n    paintCompositeRender: 2.19,\n    scriptParseCompile: 1.21,\n    scriptEvaluation: 9.63,\n    javaScript: 10.84,\n    garbageCollection: 0,\n    other: 9.95,\n    total: 69.06,\n  },\n  {\n    name: 'lib-1.1.0.js',\n    parseHTML: 2.97,\n    styleLayout: 61.02,\n    paintCompositeRender: 2.11,\n    scriptParseCompile: 2.11,\n    scriptEvaluation: 19.28,\n    javaScript: 21.39,\n    garbageCollection: 0,\n    other: 15.49,\n    total: 102.98,\n    diff: {\n      parseHTML: '2.97 (+50.17% 🔺)',\n      styleLayout: '61.02 (+26.9% 🔺)',\n      paintCompositeRender: '2.11 (-3.8% 🔽)',\n      scriptParseCompile: '2.11 (+42.66% 🔺)',\n      scriptEvaluation: '19.28 (+50.06% 🔺)',\n      javaScript: '21.39 (+49.33% 🔺)',\n      garbageCollection: '0 (N/A)',\n      other: '15.49 (+35.77% 🔺)',\n      total: '102.98 (+32.94% 🔺)',\n    },\n  },\n]\n```\n\n## Additional Use Cases\n\n### CPU Throttling Rate\n\nThe CPU Throttling Rate Emulation allows you to simulate CPU performance.\n\n- **cpuThrottlingRate** (default: `1`) - Sets the CPU throttling rate. The number represents the slowdown factor (e.g., 2 is a \"2x\" slowdown).\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { cpuThrottlingRate: 4 })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -cpu 4\n```\n\n### Network Emulation\n\nThe Network Emulation allows you to simulate a specified network conditions.\n\n- **emulateNetworkConditions** (default: `undefined`) - One of [puppeteer network conditions descriptor](https://pptr.dev/#?product=Puppeteer&version=v11.0.0&show=api-puppeteernetworkconditions).\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { emulateNetworkConditions: 'Slow 3G' })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -net Slow\\ 3G\n```\n\n### Chrome Device Emulation\n\nThe Chrome Device Emulation allow you to simulate a specified device conditions.\n\n- **device** (default: `undefined`) - One of [puppeteer devices descriptor](https://pptr.dev/#?product=Puppeteer&version=v11.0.0&show=api-puppeteerdevices).\n\n**JS API**\n\n```js\nconst report = await estimo('/path/to/example.js', { device: 'Galaxy S5' })\n```\n\n**CLI**\n\n```sh\nestimo -r ./examples/examples.js -device Galaxy\\ S5\n```\n\nWhen using CLI, for device names with spaces you should use symbols escaping.\n\n### Changing default timeout\n\nYou can specify how long estimo should wait for page to load.\n\n- **timeout** (default: `20000`) - Sets timeout in ms.\n\n**JS API**:\n\n```js\nawait estimo('/path/to/example.js', { timeout: 90000 })\n```\n\n**CLI**:\n\n```sh\nestimo -r ./examples/example.js -timeout 90000\n```\n\n### Multiple Resources\n\n**JS API**\n\n```js\nconst report = await estimo(['/path/to/libs/example.js', '/path/to/another/example/lib.js'])\n```\n\n**CLI**\n\n```sh\nestimo -r /path/to/example.js https://unpkg.com/react@16/umd/react.development.js\n```\n\n### Pages\n\nYou can use all features not only with js files, but with web pages too.\n\nWe will wait for navigation to be finished when the `load` event is fired.\n\n**JS API**\n\n```js\nconst report = await estimo('https://www.google.com/')\n```\n\n**CLI**\n\n```sh\nestimo -r https://www.google.com/\n```\n\n## Install\n\n```js\nnpm i estimo\n```\n\nor\n\n```js\nyarn add estimo\n```\n\n## How?\n\nIt uses [puppeteer](https://github.com/GoogleChrome/puppeteer) to generate Chrome Timelines. Which can be transformed in human-readable shape by [Tracium](https://github.com/aslushnikov/tracium).\n\nWe will use your local **Chrome** if it suitable for using with Estimo.\n\n**Keep in mind** there result depends on your device and available resources.\n\n## Who Uses Estimo\n\n- [Size Limit](https://github.com/ai/size-limit)\n\n## Contributing\n\nPull requests, feature ideas and bug reports are very welcome. We highly appreciate any feedback.\n",
+  "readmeFilename": "README.md",
+  "_cached": false,
+  "_contentLength": 0
+}

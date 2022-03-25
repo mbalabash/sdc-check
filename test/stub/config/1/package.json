@@ -1,0 +1,9 @@
+{
+  "sdc-check": {
+    "options": {
+      "limitOfDecisionMakers": 1,
+      "monthsOfInactivityAllowed": 1,
+      "daysBeforeUpgradeToNewVersion": 1
+    }
+  }
+}
