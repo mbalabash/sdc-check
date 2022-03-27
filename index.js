@@ -30,7 +30,7 @@ export async function check({
       mode === 'internal'
         ? await cwd(rootDir, {
             vulnerabilityStrategy: 'npm',
-            forceRootAnalysis: true
+            forceRootAnalysis: false
           })
         : await from(version ? `${packageName}@${version}` : packageName, {
             vulnerabilityStrategy: 'npm',

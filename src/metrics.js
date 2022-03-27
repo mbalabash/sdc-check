@@ -15,6 +15,15 @@ export async function getMetrics(nssOutput, config) {
 
   try {
     for (let [name, dependencyData] of Object.entries(nssOutput.dependencies)) {
+      if (
+        dependencyData.metadata.lastUpdateAt === null &&
+        dependencyData.metadata.lastVersion === null &&
+        dependencyData.metadata.publishedCount === 0
+        // looks like this is a root directory of a project when running in internal-mode
+      ) {
+        continue
+      }
+
       for (let [version, versionData] of Object.entries(dependencyData.versions)) {
         let packageManifestObject = await pacote.manifest(`${name}@${version}`, {
           fullMetadata: true
@@ -143,7 +152,7 @@ export function gatherDangerousShellCommandsMetric(packageManifestObject) {
  */
 export function gatherReleaseActivityMetrics(packument, version, config) {
   try {
-    if (!packument || packument.time === undefined) {
+    if (!packument || typeof packument.time !== "object" || !packument.time) {
       return {
         packageReleasedAfterLongPeriodOfInactivity: { result: false, value: '' },
         packageVersionIsTooNew: { result: false, value: '' }
@@ -151,6 +160,7 @@ export function gatherReleaseActivityMetrics(packument, version, config) {
     }
 
     let releaseDates = Object.values(omit(['modified', 'created'], packument.time))
+    // @ts-expect-error TS ignored if-check above and thinks that packument.time could be an undefined
     let previousVersionIndex = releaseDates.findIndex(date => date === packument.time[version]) - 1
 
     let versionReleaseDate = new Date(packument.time[version].slice(0, 10))
