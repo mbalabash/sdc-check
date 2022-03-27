@@ -22,7 +22,7 @@
     "publish": "clean-publish",
     "sdc-check": "node ./src/cli.js -d .",
     "unit": "tsm node_modules/uvu/bin.js test/",
-    "test": "yarn unit && eslint . --ignore-pattern test/"
+    "test": "yarn unit && eslint . --ignore-pattern test/ && yarn sdc-check"
   },
   "dependencies": {
     "@nodesecure/scanner": "^3.4.0",
@@ -51,6 +51,9 @@
     "sdc-check": "./src/cli.js"
   },
   "sdc-check": {
+    "options": {
+      "daysBeforeUpgradeToNewVersion": 3
+    },
     "errors": [
       "package-is-too-new",
       "lockfile-is-not-safe",

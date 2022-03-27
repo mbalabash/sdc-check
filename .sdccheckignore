@@ -1,0 +1,4 @@
+meriyah@4.2.0 | obfuscated-code
+iconv-lite | obfuscated-code
+node-gyp@9.0.0 | has-os-scripts
+@npmcli/run-script@3.0.1 | has-os-scripts
