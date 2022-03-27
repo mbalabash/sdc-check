@@ -35,8 +35,8 @@ Add new `"sdc-check"` section in your `package.json` to change defaults
 "sdc-check": {
   "options": {
     "limitOfDecisionMakers": 7,
-    "daysBeforeUpgradeToNewVersion": 7,
-    "monthsOfInactivityAllowed": 9
+    "daysBeforeUpgradeToNewVersion": 5,
+    "monthsOfInactivityAllowed": 10
   },
   "errors": ["package-is-too-new", "lockfile-is-not-safe", "has-os-scripts", "dangerous-shell-commands"]
 }

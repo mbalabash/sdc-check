@@ -79,11 +79,6 @@
       "message": "package last update date is 2016-09-06"
     },
     {
-      "metric": "released-after-long-period-of-inactivity",
-      "package": "once@1.4.0",
-      "message": "previous package release date is 2015-11-20"
-    },
-    {
       "metric": "unmaintained-package",
       "package": "pump@3.0.0",
       "message": "package last update date is 2018-01-31"

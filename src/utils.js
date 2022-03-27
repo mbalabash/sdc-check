@@ -7,8 +7,8 @@ const IGNORE_FILE_NAME = '.sdccheckignore'
 
 const defaultOptionsConfig = {
   limitOfDecisionMakers: 7,
-  daysBeforeUpgradeToNewVersion: 7,
-  monthsOfInactivityAllowed: 9
+  daysBeforeUpgradeToNewVersion: 5,
+  monthsOfInactivityAllowed: 10
 }
 
 /**

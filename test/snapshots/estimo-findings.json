@@ -616,7 +616,7 @@
         "value": ""
       },
       "packageReleasedAfterLongPeriodOfInactivity": {
-        "result": true,
+        "result": false,
         "value": "2015-11-20"
       },
       "packageVersionIsTooNew": {
