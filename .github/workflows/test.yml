@@ -20,3 +20,5 @@ jobs:
         run: yarn unit
         env:
           FORCE_COLOR: 2
+      - name: Check dependencies with sdc-check
+        run: yarn sdc-check
