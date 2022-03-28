@@ -69,6 +69,14 @@ Find out more about a package before adding it to your dependencies list
 npx sdc-check -p ua-parser-js -v 1.0.2
 ```
 
+### Wandering what has changed in the newest version of some package?
+
+Use `npm diff` command to find out
+
+```sh
+npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
+```
+
 ## Metrics
 
 - **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code
