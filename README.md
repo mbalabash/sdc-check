@@ -115,7 +115,7 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 | Status  | Name                          | Description                                                                                                                                                                |
 | ------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| In progress | **Initial release** | Will be soon |
+| In progress | **Initial release** | 30.03.2022 |
 | To do | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
 
 ## Install
