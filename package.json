@@ -77,7 +77,10 @@
     "trailingComma": "none"
   },
   "clean-publish": {
-    "cleanDocs": false
+    "cleanDocs": false,
+    "files": [".sdccheckignore"],
+    "fields": ["sdc-check"],
+    "packageManager": "yarn"
   },
   "repository": {
     "type": "git",
