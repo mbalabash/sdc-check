@@ -38,7 +38,12 @@ Add new `"sdc-check"` section in your `package.json` to change defaults
     "daysBeforeUpgradeToNewVersion": 5,
     "monthsOfInactivityAllowed": 10
   },
-  "errors": ["package-is-too-new", "lockfile-is-not-safe", "has-os-scripts", "dangerous-shell-commands"]
+  "errors": [
+    "package-is-too-new",
+    "lockfile-is-not-safe",
+    "has-os-scripts",
+    "dangerous-shell-commands"
+  ]
 }
 ```
 
@@ -79,7 +84,7 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 ## Metrics
 
-- **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code
+- **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code (it is especially dangerous because it is hard to catch in PR review)
 
 - **The newest package version is too new** (`package-is-too-new`). A new version of a package could be vulnerable. It might be safer to wait X days before upgrading to the new version and let community test it
 
@@ -89,11 +94,11 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 - **A package has OS scripts** (`has-os-scripts`). An attacker can use .bat/.sh scripts to execute malicious actions (downloading and launching mining apps, etc)
 
-- **A package script has shell commands** (`dangerous-shell-commands`). Package script has potentially dangerous commands (curl, wget, chmod, cacls, etc)
+- **A package script has shell commands** (`dangerous-shell-commands`). Package script could have potentially dangerous and/or malicious commands (curl, wget, chmod, cacls, etc)
 
 - **The newest package version is released after a long period of inactivity** (`released-after-long-period-of-inactivity`). There is a possibility that an attacker could hijack an account and publish malicious code
 
-- **Unmaintained Package** (`unmaintained-package`). A package has no updates for one year
+- **Unmaintained Package** (`unmaintained-package`). A package has no updates for at least one year
 
 - **Too many decision makers** (`too-many-decision-makers`). A package with too many maintainers/publishers will provide an attacker many targets to exploit account takeover and social engineering attacks
 
@@ -113,10 +118,9 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 ## Roadmap
 
-| Status  | Name                          | Description                                                                                                                                                                |
-| ------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| In progress | **Initial release** | 30.03.2022 |
-| To do | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
+| Status | Name                          | Description                                                                                                                                                                |
+| ------ | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| To do  | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
 
 ## Install
 
