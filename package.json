@@ -78,9 +78,12 @@
   },
   "clean-publish": {
     "cleanDocs": false,
-    "files": [".sdccheckignore"],
-    "fields": ["sdc-check"],
-    "packageManager": "yarn"
+    "files": [
+      ".sdccheckignore"
+    ],
+    "fields": [
+      "sdc-check"
+    ]
   },
   "repository": {
     "type": "git",
