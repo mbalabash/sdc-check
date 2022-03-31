@@ -1,6 +1,26 @@
 # sdc-check
 
-**Easy-to-use** tool to inform you about potential risks in your project dependencies list
+**Easy-to-use** tool to inform you about potential risks in your project dependencies list:
+
+- **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code (it is especially dangerous because it is hard to catch in PR review)
+
+- **The newest package version is too new** (`package-is-too-new`). A new version of a package could be vulnerable. It might be safer to wait X days before upgrading to the new version and let community test it
+
+- **Installation Script** (`install-scripts`). An attacker can use installation scripts to run commands that perform malicious acts through the package installation step
+
+- **Obfuscated code** (`obfuscated-code`). A package contains obfuscated code which may point to attempt of hiding potentially malicious code
+
+- **A package has OS scripts** (`has-os-scripts`). An attacker can use .bat/.sh scripts to execute malicious actions (downloading and launching mining apps, etc)
+
+- **A package script has shell commands** (`dangerous-shell-commands`). Package script could have potentially dangerous and/or malicious commands (curl, wget, chmod, cacls, etc)
+
+- **The newest package version is released after a long period of inactivity** (`released-after-long-period-of-inactivity`). There is a possibility that an attacker could hijack an account and publish malicious code
+
+- **Unmaintained Package** (`unmaintained-package`). A package has no updates for at least one year
+
+- **Too many decision makers** (`too-many-decision-makers`). A package with too many maintainers/publishers will provide an attacker many targets to exploit account takeover and social engineering attacks
+
+- **No source code repository** (`no-source-code`). When a package has no source code repository/homepage the access to review source code is restricted, forcing users to trust a package blindly
 
 ## Usage
 
@@ -81,28 +101,6 @@ Use `npm diff` command to find out
 ```sh
 npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 ```
-
-## Metrics
-
-- **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code (it is especially dangerous because it is hard to catch in PR review)
-
-- **The newest package version is too new** (`package-is-too-new`). A new version of a package could be vulnerable. It might be safer to wait X days before upgrading to the new version and let community test it
-
-- **Installation Script** (`install-scripts`). An attacker can use installation scripts to run commands that perform malicious acts through the package installation step
-
-- **Obfuscated code** (`obfuscated-code`). A package contains obfuscated code which may point to attempt of hiding potentially malicious code
-
-- **A package has OS scripts** (`has-os-scripts`). An attacker can use .bat/.sh scripts to execute malicious actions (downloading and launching mining apps, etc)
-
-- **A package script has shell commands** (`dangerous-shell-commands`). Package script could have potentially dangerous and/or malicious commands (curl, wget, chmod, cacls, etc)
-
-- **The newest package version is released after a long period of inactivity** (`released-after-long-period-of-inactivity`). There is a possibility that an attacker could hijack an account and publish malicious code
-
-- **Unmaintained Package** (`unmaintained-package`). A package has no updates for at least one year
-
-- **Too many decision makers** (`too-many-decision-makers`). A package with too many maintainers/publishers will provide an attacker many targets to exploit account takeover and social engineering attacks
-
-- **No source code repository** (`no-source-code`). When a package has no source code repository/homepage the access to review source code is restricted, forcing users to trust a package blindly
 
 ## Common threats in supply chain security
 
