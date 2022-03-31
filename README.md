@@ -12,7 +12,7 @@
 
 - **A package has OS scripts** (`has-os-scripts`). An attacker can use .bat/.sh scripts to execute malicious actions (downloading and launching mining apps, etc)
 
-- **A package script has shell commands** (`dangerous-shell-commands`). Package script could have potentially dangerous and/or malicious commands (curl, wget, chmod, cacls, etc)
+- **A package script has shell commands** (`dangerous-shell-commands`). Package script could have potentially dangerous commands to perform malicious actions (curl, wget, chmod, cacls, etc)
 
 - **The newest package version is released after a long period of inactivity** (`released-after-long-period-of-inactivity`). There is a possibility that an attacker could hijack an account and publish malicious code
 
