@@ -104,15 +104,17 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 ## Common threats in supply chain security
 
-1. **Malicious package release**: An attacker may publish malicious packages and hence trick other users into installing or depending on such packages.
+1. **Malicious code injection**: During the development process an attacker could add malicious code to a package codebase (it is dangerous because it may be hard to catch in PR review).
 
-2. **Social Engineering**: An attacker may manipulate a maintainer to hand over sensitive information.
+2. **Malicious package release**: An attacker may publish malicious packages and hence trick other users into installing or depending on such packages.
 
-3. **Account Takeover**: An attacker may compromise the credentials of a maintainer to inject malicious code under the maintainer’s name.
+3. **Social Engineering**: An attacker may manipulate a maintainer to hand over sensitive information.
 
-4. **Ownership transfer**: An attacker can show enthusiasm to maintain popular abandoned packages and transfer the ownership of a package.
+4. **Account Takeover**: An attacker may compromise the credentials of a maintainer to inject malicious code under the maintainer’s name.
 
-5. **Remote execution**: An attacker may target a package by compromising the third-party services used by that package.
+5. **Ownership transfer**: An attacker can show enthusiasm to maintain popular abandoned packages and transfer the ownership of a package.
+
+6. **Remote execution**: An attacker may target a package by compromising the third-party services used by that package.
 
 ## Roadmap
 
@@ -135,8 +137,9 @@ yarn add -D sdc-check
 ## Acknowledgments
 
 - [What are Weak Links in the npm Supply Chain?](https://arxiv.org/abs/2112.10165v2)
+- [NodeSecure](https://github.com/NodeSecure)
 - [Security for package maintainers](https://sethmlarson.dev/blog/security-for-package-maintainers)
-- [NodeSecure Org](https://github.com/NodeSecure)
+
 
 ## License
 
