@@ -152,7 +152,7 @@ export function gatherDangerousShellCommandsMetric(packageManifestObject) {
  */
 export function gatherReleaseActivityMetrics(packument, version, config) {
   try {
-    if (!packument || typeof packument.time !== "object" || !packument.time) {
+    if (!packument || typeof packument.time !== 'object' || !packument.time) {
       return {
         packageReleasedAfterLongPeriodOfInactivity: { result: false, value: '' },
         packageVersionIsTooNew: { result: false, value: '' }
@@ -220,7 +220,7 @@ export async function gatherLockFileSafetyMetric(lockfilePath) {
     let parser = new ParseLockfile({ lockfilePath, lockfileType })
     let lockfile = parser.parseSync()
     let validator = new ValidateHost({ packages: lockfile.object })
-    return validator.validate([lockfileType])
+    return validator.validate([lockfileType], { emptyHostname: true })
   } catch (error) {
     /* eslint-disable no-console */
     console.error('ERROR: Could not process the validation of lockfile')
