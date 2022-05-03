@@ -1,5 +1,6 @@
 import pacote from 'pacote'
-import { extname } from 'path'
+import { extname, join } from 'path'
+import { readFile } from 'fs/promises'
 import { ValidateHost, ParseLockfile } from 'lockfile-lint-api'
 
 import { omit, pick } from './utils.js'
@@ -10,17 +11,20 @@ const INSTALL_HOOKS = ['install', 'preinstall', 'postinstall', 'preuninstall', '
  * @typedef {import('./metrics.js').getMetrics} getMetrics
  * @type getMetrics
  */
-export async function getMetrics(nssOutput, config) {
+export async function getMetrics(nssOutput, config, rootDir) {
   let findings = []
 
   try {
+    let rootPackageJson = JSON.parse(
+      (await readFile(join(rootDir, 'package.json'), 'utf-8')) || '{}'
+    )
+
     for (let [name, dependencyData] of Object.entries(nssOutput.dependencies)) {
       if (
-        dependencyData.metadata.lastUpdateAt === null &&
-        dependencyData.metadata.lastVersion === null &&
-        dependencyData.metadata.publishedCount === 0
-        // looks like this is a root directory of a project when running in internal-mode
+        dependencyData.metadata.publishedCount === 0 ||
+        (rootPackageJson.name === name && rootPackageJson.private === 'true')
       ) {
+        // looks like this is a root directory of a project when running in internal-mode
         continue
       }
 
@@ -52,7 +56,7 @@ export async function getMetrics(nssOutput, config) {
     }
   } catch (error) {
     /* eslint-disable no-console */
-    console.error('ERROR: Could not gather metrics')
+    console.error('\nERROR: Could not gather metrics')
     throw error
     /* eslint-enable no-console */
   }

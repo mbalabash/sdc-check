@@ -20,7 +20,11 @@ export declare type Metrics = {
   }
 }
 
-export declare function getMetrics(nssOutput: Scanner.Payload, config: Config): Promise<Metrics[]>
+export declare function getMetrics(
+  nssOutput: Scanner.Payload,
+  config: Config,
+  rootDir: string
+): Promise<Metrics[]>
 
 export declare function gatherMetricsFromNodeSecScanner(
   dependencyData: Scanner.Payload['dependencies'][0],

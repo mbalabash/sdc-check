@@ -38,7 +38,7 @@ export async function check({
           })
 
     return createReport({
-      findings: await getMetrics(nssOutput, config),
+      findings: await getMetrics(nssOutput, config, rootDir),
       lockFileIsNotSafe: await gatherLockFileSafetyMetric(lockfilePath),
       ignoredPackages,
       config
