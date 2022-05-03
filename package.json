@@ -1,7 +1,7 @@
 {
   "name": "sdc-check",
   "private":"true",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Small tool to inform you about potential risks in your project dependencies list",
   "keywords": [
     "supply-chain-security",

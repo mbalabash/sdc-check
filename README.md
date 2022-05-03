@@ -1,6 +1,6 @@
 # sdc-check
 
-**Easy-to-use** tool to inform you about potential risks in your project dependencies list:
+Small tool to inform you about potential risks in your project dependencies list:
 
 - **Lock file is not safe** (`lockfile-is-not-safe`). During the development process a malicious actor could replace URLs in a lock file to package with malicious code (it is especially dangerous because it is hard to catch in PR review)
 
