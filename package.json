@@ -1,6 +1,5 @@
 {
   "name": "sdc-check",
-  "private":"true",
   "version": "1.0.2",
   "description": "Small tool to inform you about potential risks in your project dependencies list",
   "keywords": [
@@ -41,6 +40,7 @@
     "eslint": "^8.14.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-promise": "^6.0.0",

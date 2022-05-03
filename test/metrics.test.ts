@@ -28,7 +28,16 @@ test('metrics -> getMetrics: should work properly', async () => {
     await readFile(join(__dirname, 'snapshots', 'estimo-findings.json'), 'utf-8')
   )
 
-  equal(await getMetrics(estimoFrom, config), estimoFindings)
+  equal(await getMetrics(estimoFrom, config, join(__dirname, 'stub/config/1')), estimoFindings)
+})
+
+test('metrics -> getMetrics: should work properly for private package', async () => {
+  let config = JSON.parse(await readFile(defaultConfigSnapshot, 'utf-8'))
+  let estimoFrom = JSON.parse(
+    await readFile(join(__dirname, 'snapshots', 'from-private-output.json'), 'utf-8')
+  )
+
+  equal(await getMetrics(estimoFrom, config, join(__dirname, 'stub/config/4')), [])
 })
 
 test('metrics -> gatherMetricsFromNodeSecScanner: should work properly in positive case', async () => {

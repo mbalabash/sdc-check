@@ -1,0 +1,120 @@
+{
+  "id": "h1wrUZ",
+  "rootDependencyName": "estimo",
+  "scannerVersion": "3.4.0",
+  "vulnerabilityStrategy": "npm",
+  "warnings": [],
+  "dependencies": {
+    "private-example": {
+      "versions": {
+        "3.3.1": {
+          "id": 2,
+          "usedBy": {
+            "estimo": "2.3.4"
+          },
+          "isDevDependency": false,
+          "flags": ["hasMissingOrUnusedDependency", "hasManyPublishers"],
+          "description": "A tiny (130 bytes), secure URL-friendly unique string ID generator",
+          "size": 22888,
+          "author": {
+            "name": "Andrey Sitnik",
+            "email": "andrey@sitnik.ru"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": ["", ".cjs", ".js", ".json", ".ts", ".md"],
+            "files": [
+              "LICENSE",
+              "README.md",
+              "async/index.browser.cjs",
+              "async/index.browser.js",
+              "async/index.cjs",
+              "async/index.d.ts",
+              "async/index.js",
+              "async/index.native.js",
+              "async/package.json",
+              "bin/nanoid.cjs",
+              "index.browser.cjs",
+              "index.browser.js",
+              "index.cjs",
+              "index.d.ts",
+              "index.js",
+              "nanoid.js",
+              "non-secure/index.cjs",
+              "non-secure/index.d.ts",
+              "non-secure/index.js",
+              "non-secure/package.json",
+              "package.json",
+              "url-alphabet/index.cjs",
+              "url-alphabet/index.js",
+              "url-alphabet/package.json"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": ["expo-random"],
+            "required_files": ["url-alphabet/index.cjs", "url-alphabet/index.js", "../index.js"],
+            "required_nodejs": ["crypto"],
+            "required_thirdparty": ["expo-random"]
+          },
+          "license": {
+            "uniqueLicenseIds": ["MIT"],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": ["MIT"],
+                "spdxLicenseLinks": ["https://spdx.org/licenses/MIT.html#licenseText"],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": ["MIT"],
+                "spdxLicenseLinks": ["https://spdx.org/licenses/MIT.html#licenseText"],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "LICENSE"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 83,
+        "lastUpdateAt": "2022-02-16T22:22:08.836Z",
+        "lastVersion": "3.3.1",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/ai/nanoid#readme",
+        "author": {
+          "name": "Andrey Sitnik",
+          "email": "andrey@sitnik.ru"
+        },
+        "publishers": [
+          {
+            "name": "ai",
+            "email": "andrey@sitnik.ru",
+            "version": "3.3.1",
+            "at": "2022-02-16T22:22:08.836Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "ai",
+            "email": "andrey@sitnik.ru"
+          }
+        ]
+      }
+    }
+  }
+}
