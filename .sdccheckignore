@@ -1,12 +1,10 @@
-meriyah@4.2.0 | obfuscated-code
-meriyah@4.2.1 | obfuscated-code
-
+meriyah | obfuscated-code
 iconv-lite | obfuscated-code
-node-gyp@9.0.0 | has-os-scripts
-undici@5.1.1 | package-is-too-new
-pacote@13.2.0 | package-is-too-new
 
-@npmcli/run-script@3.0.1 | has-os-scripts
-@npmcli/run-script@3.0.2 | has-os-scripts
+node-gyp | has-os-scripts
+@npmcli/run-script@6.0.0 | has-os-scripts
+@npmcli/run-script@4.2.1 | has-os-scripts
+
+sigstore@1.2.0 | package-is-too-new
 
 sdc-check | package-is-too-new
