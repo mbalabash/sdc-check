@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-console */
-import pc from 'picocolors'
-import { exit } from 'process'
-import { resolve } from 'path'
 import { Command } from 'commander'
 import { createSpinner } from 'nanospinner'
+import { resolve } from 'node:path'
+import { exit } from 'node:process'
+/* eslint-disable no-console */
+import pc from 'picocolors'
 
 import { check } from '../index.js'
 
@@ -34,8 +34,8 @@ program.parse(process.argv)
 ;(async () => {
   let cliOptions = program.opts()
   let sdcOptions = {
-    rootDir: typeof cliOptions.d === 'string' ? resolve(cliOptions.d) : undefined,
     packageName: cliOptions.p,
+    rootDir: typeof cliOptions.d === 'string' ? resolve(cliOptions.d) : undefined,
     version: cliOptions.v
   }
   let spinner = createSpinner('Running sdc-check')
@@ -54,14 +54,14 @@ program.parse(process.argv)
     printWarningsInfo(report.warnings, cliOptions)
 
     if (report.type === 'error') {
-      spinner.error({ text: pc.red('sdc-check has found errors'), mark: '\n🚨' })
+      spinner.error({ mark: '\n🚨', text: pc.red('sdc-check has found errors') })
       exit(1)
     } else {
-      spinner.success({ text: pc.green('sdc-check completed without any errors'), mark: '\n✅' })
+      spinner.success({ mark: '\n✅', text: pc.green('sdc-check completed without any errors') })
     }
   } catch (error) {
     console.error(error)
-    spinner.error({ text: pc.red('sdc-check exited with error'), mark: '\n🚫' })
+    spinner.error({ mark: '\n🚫', text: pc.red('sdc-check exited with error') })
   }
 })()
 
@@ -72,15 +72,15 @@ program.parse(process.argv)
 function getReportStatsInfo(reportedItems) {
   let stats = {
     'dangerous-shell-commands': 0,
-    'package-is-too-new': 0,
+    'has-os-scripts': 0,
+    'install-scripts': 0,
     'lockfile-is-not-safe': 0,
+    'no-source-code': 0,
     'obfuscated-code': 0,
+    'package-is-too-new': 0,
     'released-after-long-period-of-inactivity': 0,
     'too-many-decision-makers': 0,
-    'unmaintained-package': 0,
-    'install-scripts': 0,
-    'no-source-code': 0,
-    'has-os-scripts': 0
+    'unmaintained-package': 0
   }
 
   reportedItems.forEach(({ metric }) => {

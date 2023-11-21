@@ -1,6 +1,6 @@
 {
   "name": "sdc-check",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Small tool to inform you about potential risks in your project dependencies list",
   "keywords": [
     "supply-chain-security",
@@ -25,27 +25,29 @@
     "test": "yarn unit && eslint . --ignore-pattern test/ && yarn sdc-check"
   },
   "dependencies": {
-    "@nodesecure/scanner": "^3.8.2",
-    "commander": "^10.0.0",
-    "lockfile-lint-api": "^5.5.1",
+    "@nodesecure/scanner": "^5.0.1",
+    "commander": "^11.1.0",
+    "lockfile-lint-api": "^5.8.0",
     "nanospinner": "^1.1.0",
-    "pacote": "^15.1.1",
+    "pacote": "^17.0.4",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^49.0.0",
-    "@types/lockfile-lint-api": "^5.1.1",
-    "@types/pacote": "^11.1.5",
-    "clean-publish": "^4.1.1",
-    "eslint": "^8.36.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.6.1",
+    "@logux/eslint-config": "^52.0.2",
+    "@types/lockfile-lint-api": "^5.1.5",
+    "@types/pacote": "^11.1.8",
+    "clean-publish": "^4.2.0",
+    "eslint": "^8.54.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-node-import": "^1.0.4",
+    "eslint-plugin-perfectionist": "^2.4.0",
     "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-promise": "^6.1.1",
     "tsm": "^2.3.0",
-    "typescript": "^5.0.2",
+    "typescript": "^5.3.2",
     "uvu": "^0.5.6"
   },
   "bin": {

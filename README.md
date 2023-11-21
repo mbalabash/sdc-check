@@ -116,12 +116,6 @@ npm diff --diff=dependency@1.2.3 --diff=dependency@1.3.5
 
 6. **Remote execution**: An attacker may target a package by compromising the third-party services used by that package.
 
-## Roadmap
-
-| Status | Name                          | Description                                                                                                                                                                |
-| ------ | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| To do  | **Expired Maintainer Domain** | An attacker can hijack a package if a maintainer’s domain is expired ([info](https://therecord.media/thousands-of-npm-accounts-use-email-addresses-with-expired-domains/)) |
-
 ## Install
 
 ```js

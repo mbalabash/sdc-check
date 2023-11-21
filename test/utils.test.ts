@@ -1,6 +1,6 @@
 import { test } from 'uvu'
 import { equal, snapshot } from 'uvu/assert'
-import { readFile } from 'fs/promises'
+import { readFile, writeFile } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -52,7 +52,7 @@ test('utils -> loadConfig: should use custom options instead of default options'
     join(__dirname, 'snapshots', 'custom-options-config.json'),
     'utf-8'
   )
-  snapshot(JSON.stringify(config, null, 2), customOptionsConfig)
+  snapshot(JSON.stringify(config), customOptionsConfig)
 })
 
 test('utils -> loadConfig: should use custom errors instead of default errors', async () => {
@@ -61,7 +61,7 @@ test('utils -> loadConfig: should use custom errors instead of default errors', 
     join(__dirname, 'snapshots', 'custom-errors-config.json'),
     'utf-8'
   )
-  snapshot(JSON.stringify(config, null, 2), customErrorsConfig)
+  snapshot(JSON.stringify(config), customErrorsConfig)
 })
 
 test.run()

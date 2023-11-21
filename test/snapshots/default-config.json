@@ -1,6 +1,6 @@
 {
-  "limitOfDecisionMakers": 7,
   "daysBeforeUpgradeToNewVersion": 5,
+  "limitOfDecisionMakers": 7,
   "monthsOfInactivityAllowed": 10,
   "errors": [
     "package-is-too-new",

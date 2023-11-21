@@ -1,9 +1,1 @@
-{
-  "limitOfDecisionMakers": 1,
-  "daysBeforeUpgradeToNewVersion": 1,
-  "monthsOfInactivityAllowed": 1,
-  "errors": [
-    "lockfile-is-not-safe",
-    "install-scripts"
-  ]
-}
+{"daysBeforeUpgradeToNewVersion":1,"limitOfDecisionMakers":1,"monthsOfInactivityAllowed":1,"errors":["lockfile-is-not-safe","install-scripts"]}

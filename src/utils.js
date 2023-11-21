@@ -1,13 +1,13 @@
-import { access, readFile } from 'fs/promises'
-import { join } from 'path'
-import { constants } from 'fs'
+import { constants } from 'node:fs'
+import { access, readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
 const PACKAGE_JSON_CONFIG_KEY = 'sdc-check'
 const IGNORE_FILE_NAME = '.sdccheckignore'
 
 const defaultOptionsConfig = {
-  limitOfDecisionMakers: 7,
   daysBeforeUpgradeToNewVersion: 5,
+  limitOfDecisionMakers: 7,
   monthsOfInactivityAllowed: 10
 }
 

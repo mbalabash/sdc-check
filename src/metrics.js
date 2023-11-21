@@ -1,7 +1,7 @@
+import { ParseLockfile, ValidateHost } from 'lockfile-lint-api'
+import { readFile } from 'node:fs/promises'
+import { extname, join } from 'node:path'
 import pacote from 'pacote'
-import { extname, join } from 'path'
-import { readFile } from 'fs/promises'
-import { ValidateHost, ParseLockfile } from 'lockfile-lint-api'
 
 import { omit, pick } from './utils.js'
 
@@ -37,8 +37,6 @@ export async function getMetrics(nssOutput, config, rootDir) {
         })
 
         findings.push({
-          package: name,
-          version,
           metrics: {
             ...gatherMetricsFromNodeSecScanner(
               dependencyData,
@@ -50,7 +48,9 @@ export async function getMetrics(nssOutput, config, rootDir) {
             ...gatherDangerousShellCommandsMetric(packageManifestObject),
             ...(await gatherReleaseActivityMetrics(packument, version, config)),
             ...gatherOsScriptsMetric(versionData)
-          }
+          },
+          package: name,
+          version
         })
       }
     }
@@ -79,14 +79,6 @@ export function gatherMetricsFromNodeSecScanner(
   let obfuscatedCodeWarns = versionData.warnings.filter(warn => warn.kind === 'obfuscated-code')
 
   return {
-    hasTooManyDecisionMakers: {
-      result: decisionMakers > config.limitOfDecisionMakers,
-      value: decisionMakers
-    },
-    isPackageUnmaintained: {
-      result: dependencyData.metadata.hasReceivedUpdateInOneYear === false,
-      value: new Date(dependencyData.metadata.lastUpdateAt).toISOString().slice(0, 10)
-    },
     hasInstallScripts: {
       result: versionData.flags.some(flag => flag === 'hasScript'),
       value: JSON.stringify(pick(INSTALL_HOOKS, packageManifestObject.scripts || {}))
@@ -97,6 +89,14 @@ export function gatherMetricsFromNodeSecScanner(
         // @ts-expect-error Bad type inference
         .map(warn => `${warn.value}-${warn.file}`)
         .join(', ')
+    },
+    hasTooManyDecisionMakers: {
+      result: decisionMakers > config.limitOfDecisionMakers,
+      value: decisionMakers
+    },
+    isPackageUnmaintained: {
+      result: dependencyData.metadata.hasReceivedUpdateInOneYear === false,
+      value: new Date(dependencyData.metadata.lastUpdateAt).toISOString().slice(0, 10)
     }
   }
 }
@@ -164,7 +164,6 @@ export function gatherReleaseActivityMetrics(packument, version, config) {
     }
 
     let releaseDates = Object.values(omit(['modified', 'created'], packument.time))
-    // @ts-expect-error TS ignored if-check above and thinks that packument.time could be an undefined
     let previousVersionIndex = releaseDates.findIndex(date => date === packument.time[version]) - 1
 
     let versionReleaseDate = new Date(packument.time[version].slice(0, 10))
@@ -216,7 +215,7 @@ export function gatherReleaseActivityMetrics(packument, version, config) {
  */
 export async function gatherLockFileSafetyMetric(lockfilePath) {
   if (!lockfilePath) {
-    return { type: 'success', object: {} }
+    return { object: {}, type: 'success' }
   }
 
   try {

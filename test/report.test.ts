@@ -99,64 +99,64 @@ test('report -> createReport: should work properly with custom config and ignore
       }
     }),
     {
-      type: 'error',
       errors: [
         {
+          message: "detected invalid origin for package: @test/data",
           metric: 'lockfile-is-not-safe',
-          message: 'detected invalid origin for package: @test/data',
           package: '@test/data'
         },
         {
-          metric: 'too-many-decision-makers',
-          package: 'sdc-check@0.1.0',
-          message: 'count of decision makers is 1'
-        },
-        {
-          metric: 'unmaintained-package',
-          package: 'sdc-check@0.1.0',
-          message: 'package last update date is qwe'
-        },
-        {
+          message: 'install scripts found: qwe',
           metric: 'install-scripts',
-          package: 'sdc-check@0.1.0',
-          message: 'install scripts found: qwe'
+          package: 'sdc-check@0.1.0'
         },
         {
-          metric: 'no-source-code',
-          package: 'sdc-check@0.1.0',
-          message: 'could not find references to source code repository'
-        },
-        {
-          metric: 'dangerous-shell-commands',
-          package: 'sdc-check@0.1.0',
-          message: 'shell commands found: qwe'
-        },
-        {
-          metric: 'released-after-long-period-of-inactivity',
-          package: 'sdc-check@0.1.0',
-          message: 'previous package release date is qwe'
-        },
-        {
-          metric: 'package-is-too-new',
-          package: 'sdc-check@0.1.0',
-          message: 'package release date is qwe'
-        },
-        {
-          metric: 'has-os-scripts',
-          package: 'sdc-check@0.1.0',
-          message: 'os scripts found: [qwe]'
-        },
-        {
+          message: 'obfuscated code found: qwe',
           metric: 'obfuscated-code',
-          package: 'sdc-check@0.1.0',
-          message: 'obfuscated code found: qwe'
+          package: 'sdc-check@0.1.0'
         },
         {
+          message: 'os scripts found: [qwe]',
+          metric: 'has-os-scripts',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "count of decision makers is 1",
+          metric: 'too-many-decision-makers',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "package last update date is qwe",
+          metric: 'unmaintained-package',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "could not find references to source code repository",
+          metric: 'no-source-code',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "previous package release date is qwe",
+          metric: 'released-after-long-period-of-inactivity',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "package release date is qwe",
+          metric: 'package-is-too-new',
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "shell commands found: qwe",
           metric: 'dangerous-shell-commands',
-          package: 'sdc-check@0.2.0',
-          message: 'shell commands found: qwe'
+          package: 'sdc-check@0.1.0'
+        },
+        {
+          message: "shell commands found: qwe",
+          metric: 'dangerous-shell-commands',
+          package: 'sdc-check@0.2.0'
         }
       ],
+      type: 'error',
       warnings: []
     }
   )
@@ -289,16 +289,16 @@ test('report -> getMetricMessageForReport: should work properly', async () => {
   )
 
   equal(messages, [
-    'n/a',
+    'install scripts found: qwe',
+    'obfuscated code found: qwe',
+    'os scripts found: [1, 2]',
     'count of decision makers is qwe',
     'package last update date is qwe',
-    'install scripts found: qwe',
+    'n/a',
     'could not find references to source code repository',
-    'shell commands found: qwe',
     'previous package release date is qwe',
     'package release date is qwe',
-    'os scripts found: [1, 2]',
-    'obfuscated code found: qwe'
+    'shell commands found: qwe'
   ])
 })
 

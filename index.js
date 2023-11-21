@@ -1,19 +1,19 @@
-import { from, cwd } from '@nodesecure/scanner'
+import { cwd, from } from '@nodesecure/scanner'
 
-import { getMetrics, gatherLockFileSafetyMetric } from './src/metrics.js'
-import { loadConfig, loadIgnoreFile, findLockFilePath, resolveMode } from './src/utils.js'
+import { gatherLockFileSafetyMetric, getMetrics } from './src/metrics.js'
 import { createReport } from './src/report.js'
+import { findLockFilePath, loadConfig, loadIgnoreFile, resolveMode } from './src/utils.js'
 
 /**
  * @typedef {import('./index').check} check
  * @type check
  */
 export async function check({
-  rootDir = '',
-  packageName = '',
-  version = '',
   config,
-  ignoredPackages
+  ignoredPackages,
+  packageName = '',
+  rootDir = '',
+  version = ''
 }) {
   try {
     if (!rootDir && !packageName) {
@@ -29,25 +29,25 @@ export async function check({
     let nssOutput =
       mode === 'internal'
         ? await cwd(rootDir, {
-            vulnerabilityStrategy: 'npm',
-            forceRootAnalysis: true
+            forceRootAnalysis: true,
+            vulnerabilityStrategy: 'npm'
           })
         : await from(version ? `${packageName}@${version}` : packageName, {
-            vulnerabilityStrategy: 'npm',
-            forceRootAnalysis: true
+            forceRootAnalysis: true,
+            vulnerabilityStrategy: 'npm'
           })
 
     return createReport({
+      config,
       findings: await getMetrics(nssOutput, config, rootDir),
-      lockFileIsNotSafe: await gatherLockFileSafetyMetric(lockfilePath),
       ignoredPackages,
-      config
+      lockFileIsNotSafe: await gatherLockFileSafetyMetric(lockfilePath)
     })
   } catch (error) {
     /* eslint-disable no-console */
     console.error(error)
     console.error('ERROR: Could not perform sdc-check audit')
     /* eslint-enable no-console */
-    return { type: 'none', errors: [], warnings: [] }
+    return { errors: [], type: 'none', warnings: [] }
   }
 }

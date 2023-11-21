@@ -101,7 +101,7 @@ test('metrics -> gatherMetricsFromNodeSecScanner: should work properly in negati
         flags: ['']
       } as unknown as Scanner.Payload['dependencies'][0]['versions'][0],
       defaultConfig,
-      { scripts: {} } as ManifestResult
+      { scripts: {} } as unknown as ManifestResult
     ),
     {
       hasTooManyDecisionMakers: {
@@ -128,7 +128,7 @@ test('metrics -> gatherSourceCodeRepositoryMetric: should work properly in posit
   equal(
     gatherSourceCodeRepositoryMetric(
       { metadata: { homepage: 'github...' } } as Scanner.Payload['dependencies'][0],
-      { repository: { url: 'github...' } } as ManifestResult
+      { repository: { url: 'github...' } } as unknown as ManifestResult
     ),
     {
       noSourceCodeRepository: {
@@ -141,7 +141,7 @@ test('metrics -> gatherSourceCodeRepositoryMetric: should work properly in posit
   equal(
     gatherSourceCodeRepositoryMetric(
       { metadata: { homepage: 'gitlab...' } } as Scanner.Payload['dependencies'][0],
-      { repository: { url: 'gitlab...' } } as ManifestResult
+      { repository: { url: 'gitlab...' } } as unknown as ManifestResult
     ),
     {
       noSourceCodeRepository: {
@@ -156,7 +156,7 @@ test('metrics -> gatherSourceCodeRepositoryMetric: should work properly in negat
   equal(
     gatherSourceCodeRepositoryMetric(
       { metadata: {} } as Scanner.Payload['dependencies'][0],
-      { repository: {} } as ManifestResult
+      { repository: {} } as unknown as ManifestResult
     ),
     {
       noSourceCodeRepository: {
@@ -169,7 +169,7 @@ test('metrics -> gatherSourceCodeRepositoryMetric: should work properly in negat
   equal(
     gatherSourceCodeRepositoryMetric(
       { metadata: { homepage: '' } } as Scanner.Payload['dependencies'][0],
-      { repository: { url: '' } } as ManifestResult
+      { repository: { url: '' } } as unknown as ManifestResult
     ),
     {
       noSourceCodeRepository: {
@@ -243,7 +243,7 @@ test('metrics -> gatherDangerousShellCommandsMetric: should work properly in neg
     }
   })
 
-  equal(gatherDangerousShellCommandsMetric({ scripts: {} } as ManifestResult), {
+  equal(gatherDangerousShellCommandsMetric({ scripts: {} } as unknown as ManifestResult), {
     scriptsHaveDangerousShellCommands: {
       result: false,
       value: ''

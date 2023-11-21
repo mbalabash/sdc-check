@@ -5,16 +5,16 @@ import { omit } from './utils.js'
  * @type METRICS_ALIASES
  */
 export const SDC_CHECK_METRICS_ALIASES = {
-  lockFileIsNotSafe: 'lockfile-is-not-safe',
+  hasInstallScripts: 'install-scripts',
+  hasObfuscatedCode: 'obfuscated-code',
+  hasOsScripts: 'has-os-scripts',
   hasTooManyDecisionMakers: 'too-many-decision-makers',
   isPackageUnmaintained: 'unmaintained-package',
-  hasInstallScripts: 'install-scripts',
+  lockFileIsNotSafe: 'lockfile-is-not-safe',
   noSourceCodeRepository: 'no-source-code',
-  scriptsHaveDangerousShellCommands: 'dangerous-shell-commands',
   packageReleasedAfterLongPeriodOfInactivity: 'released-after-long-period-of-inactivity',
   packageVersionIsTooNew: 'package-is-too-new',
-  hasOsScripts: 'has-os-scripts',
-  hasObfuscatedCode: 'obfuscated-code'
+  scriptsHaveDangerousShellCommands: 'dangerous-shell-commands'
 }
 
 /**
@@ -31,7 +31,7 @@ export function createReport(options) {
     throw new Error('There are no metrics data to create report')
   }
 
-  let { findings, lockFileIsNotSafe, config, ignoredPackages } = options
+  let { config, findings, ignoredPackages, lockFileIsNotSafe } = options
   let keys = getReportMetricKeys(SDC_CHECK_METRICS_ALIASES)
   let report = initReport()
 
@@ -40,15 +40,15 @@ export function createReport(options) {
     let level = getReportLevel(config, SDC_CHECK_METRICS_ALIASES.lockFileIsNotSafe)
     lockFileIsNotSafe.errors.forEach(error => {
       report[level].push({
-        metric: SDC_CHECK_METRICS_ALIASES.lockFileIsNotSafe,
         message: error.message,
+        metric: SDC_CHECK_METRICS_ALIASES.lockFileIsNotSafe,
         package: error.package
       })
     })
   }
 
   // Add report data for other metrics:
-  for (let { package: _package, version, metrics } of findings) {
+  for (let { metrics, package: _package, version } of findings) {
     let packageSpec = `${_package}@${version}`
     if (ignoredPackages[packageSpec] === true || ignoredPackages[_package] === true) {
       continue
@@ -59,9 +59,9 @@ export function createReport(options) {
       if (metrics[key].result === true && !isIgnoredMetric(metric, packageSpec, ignoredPackages)) {
         let level = getReportLevel(config, metric)
         report[level].push({
+          message: getMetricMessageForReport(metric, metrics[key].value),
           metric,
-          package: packageSpec,
-          message: getMetricMessageForReport(metric, metrics[key].value)
+          package: packageSpec
         })
       }
     })
@@ -75,7 +75,7 @@ export function createReport(options) {
  * @type initReport
  */
 function initReport() {
-  return { type: 'none', errors: [], warnings: [] }
+  return { errors: [], type: 'none', warnings: [] }
 }
 
 /**
